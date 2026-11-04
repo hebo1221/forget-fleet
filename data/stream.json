@@ -1,0 +1,3022 @@
+[
+ {
+  "ts": "2026-10-09 08:00",
+  "pole": "P-05",
+  "type": "low_activity",
+  "source": "telemetry",
+  "summary": "Archive volume below 20% of this pole's normal for 5 daytime hours (from 08:00).",
+  "resolution": "",
+  "id": "e1",
+  "day": "2026-10-09"
+ },
+ {
+  "ts": "2026-10-09 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 8 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e2",
+  "day": "2026-10-09"
+ },
+ {
+  "ts": "2026-10-10 08:00",
+  "pole": "P-05",
+  "type": "low_activity",
+  "source": "telemetry",
+  "summary": "Archive volume below 20% of this pole's normal for 8 daytime hours (from 08:00).",
+  "resolution": "",
+  "id": "e3",
+  "day": "2026-10-10"
+ },
+ {
+  "ts": "2026-10-10 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 8 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e4",
+  "day": "2026-10-10"
+ },
+ {
+  "ts": "2026-10-11 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e5",
+  "day": "2026-10-11"
+ },
+ {
+  "ts": "2026-10-12 18:35",
+  "pole": "P-22",
+  "type": "hold",
+  "summary": "Control stuck showing parked while engine reads empty",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e6",
+  "day": "2026-10-12"
+ },
+ {
+  "ts": "2026-10-12 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 13 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e7",
+  "day": "2026-10-12"
+ },
+ {
+  "ts": "2026-10-13 07:13",
+  "pole": "P-30",
+  "type": "hold",
+  "summary": "Firmware history hold, control frozen with missing producer",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e8",
+  "day": "2026-10-13"
+ },
+ {
+  "ts": "2026-10-13 07:14",
+  "pole": "P-31",
+  "type": "hold",
+  "summary": "Firmware history hold, control frozen with missing producer",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e9",
+  "day": "2026-10-13"
+ },
+ {
+  "ts": "2026-10-13 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e10",
+  "day": "2026-10-13"
+ },
+ {
+  "ts": "2026-10-14 13:45",
+  "pole": "fleet",
+  "type": "offline",
+  "summary": "22 auxiliary workers failed, 6 not installed, 2 inactive",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e11",
+  "day": "2026-10-14"
+ },
+ {
+  "ts": "2026-10-14 14:42",
+  "pole": "P-26",
+  "type": "deploy",
+  "summary": "Three capture files installed on live operating path",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e12",
+  "day": "2026-10-14"
+ },
+ {
+  "ts": "2026-10-14 15:07",
+  "pole": "P-26",
+  "type": "engine_restart",
+  "summary": "Engine restarted once, process id changed",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e13",
+  "day": "2026-10-14"
+ },
+ {
+  "ts": "2026-10-14 16:19",
+  "pole": "P-26",
+  "type": "false_occupancy",
+  "summary": "False arrival declared in empty bay, not forwarded",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e14",
+  "day": "2026-10-14"
+ },
+ {
+  "ts": "2026-10-14 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e15",
+  "day": "2026-10-14"
+ },
+ {
+  "ts": "2026-10-15 00:07",
+  "pole": "P-26",
+  "type": "billing_case",
+  "summary": "Engine reported empty while bay occupied, model correct",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e16",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 00:27",
+  "pole": "fleet",
+  "type": "field_visit",
+  "summary": "Operator arrived on site for direct bay testing",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e17",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 00:33",
+  "pole": "P-30",
+  "type": "billing_case",
+  "summary": "Engine missed all departures, merged parkings into one session",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e18",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 01:18",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "22 poles frozen holding last state after worker loss",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e19",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 01:21",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "All-bay head put in real control on 29 poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e20",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 01:31",
+  "pole": "P-24",
+  "type": "engine_restart",
+  "summary": "Engine restarted to fix new-model handoff rejection",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e21",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 01:31",
+  "pole": "P-26",
+  "type": "engine_restart",
+  "summary": "Engine restarted to fix new-model handoff rejection",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e22",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 01:40",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Control screen disagreed with engines on 24 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e23",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 02:07",
+  "pole": "fleet",
+  "type": "billing_case",
+  "summary": "14 stale parked sessions closed at reconciliation time, times inaccurate",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e24",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 02:14",
+  "pole": "P-25",
+  "type": "deploy",
+  "summary": "Engine directory replaced with v2 test build",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e25",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 02:30",
+  "pole": "P-22",
+  "type": "deploy",
+  "summary": "Engine hook installed and bay reconnected to control",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e26",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 02:48",
+  "pole": "P-05",
+  "type": "config",
+  "summary": "ROI edited, engine rejected packets and froze control",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e27",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 03:00",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Worker version 2 reconnected on all 31 new-model bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e28",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 04:17",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Tail-tuned model hot-swapped into live control on 31 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e29",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 04:20",
+  "pole": "P-32",
+  "type": "hold",
+  "summary": "Journal faulted during model swap, control held",
+  "resolution": "Reconnected with fresh journal",
+  "source": "logbook",
+  "id": "e30",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 05:04",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Recorder version 2 deployed on 38 poles with latest worker",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e31",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 05:18",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Archive disk single spinning disk, high wait and slow reads",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e32",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 06:00",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Bay crop sidecar logger and upload enabled on 37 poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e33",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 07:12",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Challenger model started in shadow logging on 37 poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e34",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 09:51",
+  "pole": "P-20",
+  "type": "config",
+  "summary": "ROI edited twice, caused producer fault and control hold",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e35",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 10:56",
+  "pole": "P-17",
+  "type": "offline",
+  "summary": "Worker stalled, journal faulted and control held",
+  "resolution": "Reconciled at 11:10",
+  "source": "logbook",
+  "id": "e36",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 11:10",
+  "pole": "P-17",
+  "type": "engine_restart",
+  "summary": "Engine restarted with fresh journal and firmware reconnect",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e37",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 11:10",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Engine restarted with fresh journal and firmware reconnect",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e38",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 12:58",
+  "pole": "P-11",
+  "type": "hold",
+  "summary": "Firmware rejected reused event id, needed fresh journal",
+  "resolution": "Fixed by second reconcile",
+  "source": "logbook",
+  "id": "e39",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 12:58",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Worker version 3 with challenger model live on 31 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e40",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 13:17",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Identity push patch deployed with restart on 31 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e41",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 14:40",
+  "pole": "P-26",
+  "type": "billing_case",
+  "summary": "Quick vehicle swap missed, old session kept with wrong photo",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e42",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 15:26",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Swap detection added and hot-replaced without gaps on 31 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e43",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 16:20",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Five remaining poles brought into normal history-mode operation",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e44",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 16:40",
+  "pole": "P-10",
+  "type": "rollback",
+  "summary": "Rolled back to legacy engine due cart misread and deadlock",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e45",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 19:35",
+  "pole": "P-19",
+  "type": "offline",
+  "summary": "Pole unreachable, connection refused, likely power or network",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e46",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 19:44",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Candidate-state engine fix deployed to 37 poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e47",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 22:14",
+  "pole": "P-19",
+  "type": "network",
+  "summary": "Pole back online alone, uptime shows no reboot, network blip",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e48",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-15 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 30 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e49",
+  "day": "2026-10-15"
+ },
+ {
+  "ts": "2026-10-16 00:25",
+  "pole": "P-30",
+  "type": "deploy",
+  "summary": "Pole plate re-read window deployed for arrival testing",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e50",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 00:30",
+  "pole": "P-10",
+  "type": "rollback",
+  "summary": "Rolled back to legacy engine after cart read as occupied",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e51",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 00:30",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Bay crop model with worker live on 37 poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e52",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 07:50",
+  "pole": "P-30",
+  "type": "missed_plate",
+  "summary": "Short stay got no plate after split reads",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e53",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 08:15",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Pole plate re-read deployed to all model-only poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e54",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 08:25",
+  "pole": "P-36",
+  "type": "offline",
+  "summary": "SSH closed after reconcile, uploads stopped",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e55",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 09:00",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Training disk full, blocking jobs and server writes",
+  "resolution": "Owner deleted old capture folders, 177 GB freed",
+  "source": "logbook",
+  "id": "e56",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 11:00",
+  "pole": "P-08",
+  "type": "hold",
+  "summary": "Engine hold blocked delivery, firmware session merged across cars",
+  "resolution": "Reconciled, runtime directory fix deployed",
+  "source": "logbook",
+  "id": "e57",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 11:30",
+  "pole": "fleet",
+  "type": "reboot",
+  "summary": "Power cycles for camera moves broke packet path",
+  "resolution": "Runtime directory fix deployed fleet-wide",
+  "source": "logbook",
+  "id": "e58",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 11:39",
+  "pole": "P-38",
+  "type": "billing_case",
+  "summary": "Exit recorded about 2.5 minutes late after reconcile",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e59",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 11:50",
+  "pole": "P-37",
+  "type": "missed_plate",
+  "summary": "Plate reading off on fingerprint mismatch, no plates",
+  "resolution": "License reissued, licensed mode restored",
+  "source": "logbook",
+  "id": "e60",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 11:50",
+  "pole": "P-39",
+  "type": "missed_plate",
+  "summary": "Plate reading off on fingerprint mismatch, no plates",
+  "resolution": "License reissued, licensed mode restored",
+  "source": "logbook",
+  "id": "e61",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 12:20",
+  "pole": "server",
+  "type": "labeler_lag",
+  "summary": "No reviews for three days, scoring and correctness blocked",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e62",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 13:32",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Engine gap and observation gap counters deployed",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e63",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 13:34",
+  "pole": "fleet",
+  "type": "billing_case",
+  "summary": "Neighbour bay plates attached, causing wrong payment sums",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e64",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 14:00",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Static neighbour plate filter deployed to all bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e65",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 14:09",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Cross-bay plate uniqueness guard deployed over row network",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e66",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 14:21",
+  "pole": "P-13",
+  "type": "offline",
+  "summary": "Short entry and exit lost during history unbound window",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e67",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 14:42",
+  "pole": "P-25",
+  "type": "hold",
+  "summary": "Held on continuity unverified, engine version unsupported",
+  "resolution": "Normalized to standard stack at 15:43",
+  "source": "logbook",
+  "id": "e68",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 15:09",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Firmware auto-reconnect receiver deployed fleet-wide",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e69",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 15:43",
+  "pole": "P-25",
+  "type": "deploy",
+  "summary": "Standard engine with worker and model attached",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e70",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 15:43",
+  "pole": "P-25",
+  "type": "billing_case",
+  "summary": "Parked car recorded as new entry at switch",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e71",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 15:50",
+  "pole": "P-10",
+  "type": "false_occupancy",
+  "summary": "Merchant cart read as occupied on both engines",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e72",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 16:06",
+  "pole": "P-23",
+  "type": "reboot",
+  "summary": "Power reboot, session carried over after reconcile",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e73",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 16:08",
+  "pole": "P-16",
+  "type": "billing_case",
+  "summary": "False departure logged, correction request later retracted",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e74",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 16:16",
+  "pole": "P-10",
+  "type": "deploy",
+  "summary": "Converted to standard stack, open session carried over",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e75",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 16:50",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Smart pole reader deployed to all bays after first bay",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e76",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 17:07",
+  "pole": "P-01",
+  "type": "offline",
+  "summary": "SSH closed and uploads stopped after rollout",
+  "resolution": "Reopened without reboot at 17:16, reconciled OK",
+  "source": "logbook",
+  "id": "e77",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 17:15",
+  "pole": "server",
+  "type": "reboot",
+  "summary": "Training server restarted, services auto-restarted",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e78",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 17:18",
+  "pole": "P-01",
+  "type": "engine_restart",
+  "summary": "Engine restarted by watcher false positive on healthy bay",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e79",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 18:56",
+  "pole": "P-11",
+  "type": "hold",
+  "summary": "Held about six hours, three visits missed",
+  "resolution": "Reconciled, start correction to 19:53 requested",
+  "source": "logbook",
+  "id": "e80",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 19:10",
+  "pole": "P-11",
+  "type": "billing_case",
+  "summary": "Two short visits missed, open session started late",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e81",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 23:17",
+  "pole": "P-16",
+  "type": "false_occupancy",
+  "summary": "Occupancy flapped 30 times, many short plated sessions",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e82",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-16 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 67 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e83",
+  "day": "2026-10-16"
+ },
+ {
+  "ts": "2026-10-17 01:00",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Backtrack slowed and gap threshold raised to stop holds",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e84",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 01:09",
+  "pole": "P-19",
+  "type": "offline",
+  "summary": "SSH closed again after successful reconcile",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e85",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 02:07",
+  "pole": "P-30",
+  "type": "deploy",
+  "summary": "Adaptive backtrack yield deployed for stall test",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e86",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 02:09",
+  "pole": "fleet",
+  "type": "offline",
+  "summary": "Multiple poles intermittently unreachable overnight",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e87",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 11:09",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Brief hold auto-reconciled within minute",
+  "resolution": "Auto-reconciled",
+  "source": "logbook",
+  "id": "e88",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 11:10",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Adaptive yield rolled out to 38 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e89",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 11:25",
+  "pole": "P-30",
+  "type": "deploy",
+  "summary": "Entry-moment-first backtrack deployed for test",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e90",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 11:36",
+  "pole": "P-31",
+  "type": "hold",
+  "summary": "Brief hold auto-reconciled within minute",
+  "resolution": "Auto-reconciled",
+  "source": "logbook",
+  "id": "e91",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 15:03",
+  "pole": "fleet",
+  "type": "network",
+  "summary": "SSH refusals spiked across bays during parallel scans",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e92",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 15:20",
+  "pole": "P-30",
+  "type": "rollback",
+  "summary": "Entry-first ordering reverted after decision rate fell",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e93",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 15:51",
+  "pole": "P-30",
+  "type": "deploy",
+  "summary": "Track-first plate method enabled in shadow mode",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e94",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 16:17",
+  "pole": "P-11",
+  "type": "hold",
+  "summary": "Brief hold auto-reconciled within minutes",
+  "resolution": "Auto-reconciled",
+  "source": "logbook",
+  "id": "e95",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 16:24",
+  "pole": "P-24",
+  "type": "hold",
+  "summary": "Brief hold auto-reconciled within minutes",
+  "resolution": "Auto-reconciled",
+  "source": "logbook",
+  "id": "e96",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 18:38",
+  "pole": "P-30",
+  "type": "config",
+  "summary": "Shadow limited to once per session to cut CPU",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e97",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 18:41",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Track-first shadow enabled on four busy bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e98",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 20:26",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Brief hold auto-reconnected within minutes",
+  "resolution": "Auto-reconnected",
+  "source": "logbook",
+  "id": "e99",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 23:17",
+  "pole": "P-23",
+  "type": "hold",
+  "summary": "Stale observation hold auto-reconnected within minutes",
+  "resolution": "Auto-reconnected",
+  "source": "logbook",
+  "id": "e100",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-17 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 1 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e101",
+  "day": "2026-10-17"
+ },
+ {
+  "ts": "2026-10-18 13:36",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Track-first method made primary with old fallback",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e102",
+  "day": "2026-10-18"
+ },
+ {
+  "ts": "2026-10-18 13:54",
+  "pole": "P-23",
+  "type": "billing_case",
+  "summary": "Exit may be minutes late after restart retry",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e103",
+  "day": "2026-10-18"
+ },
+ {
+  "ts": "2026-10-18 14:35",
+  "pole": "server",
+  "type": "offline",
+  "summary": "Training server unreachable, forwarded ports failing",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e104",
+  "day": "2026-10-18"
+ },
+ {
+  "ts": "2026-10-18 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 38/39 poles reported every hour; 17 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e105",
+  "day": "2026-10-18"
+ },
+ {
+  "ts": "2026-10-19 08:24",
+  "pole": "P-38",
+  "type": "disk",
+  "summary": "Rear camera files filled disk, engine crashed, session lost",
+  "resolution": "Oldest videos deleted, guard installed",
+  "source": "logbook",
+  "id": "e106",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 09:25",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Disk guard and diagnostic tool installed on all poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e107",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 10:47",
+  "pole": "P-39",
+  "type": "config",
+  "summary": "Video collection enabled, upload key registered",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e108",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 10:55",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Held 40 minutes for producer unavailable, reconnected with no missed entries.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e109",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 11:32",
+  "pole": "P-38",
+  "type": "disk",
+  "summary": "Rear video bitrate exceeded uploader capacity, old video deleted above threshold.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e110",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 11:37",
+  "pole": "P-39",
+  "type": "config",
+  "summary": "Capped rear stream encoder at 3 Mbps to fit upload link.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e111",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 11:39",
+  "pole": "P-20",
+  "type": "hold",
+  "summary": "Auto guard reconnected bay during firmware test, session preserved.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e112",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 11:45",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Deployed engine startup grace fix to all poles after reboot handover fault.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e113",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 12:23",
+  "pole": "fleet",
+  "type": "config",
+  "summary": "Excluded all bays from auto reconnect guard during firmware rollout.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e114",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 12:47",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Deployed firmware to all poles, restarted firmware service only.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e115",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 13:43",
+  "pole": "P-23",
+  "type": "hold",
+  "summary": "Held 3.5 hours unnoticed after external session replaced firmware files.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e116",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 17:02",
+  "pole": "P-34",
+  "type": "reboot",
+  "summary": "Device rebooted, caused hold later cleared.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e117",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 19:09",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Restarted engine for exit photo change, journal and run unchanged.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e118",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 20:48",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Held for producer unavailable with open session and accumulated events.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e119",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 22:00",
+  "pole": "fleet",
+  "type": "network",
+  "summary": "Router refused external ports under heavy SSH load, poles healthy locally.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e120",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 22:05",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Engine-only restarts left three bays held overnight on long run validation.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e121",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-19 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 39/39 poles reported every hour; 3 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e122",
+  "day": "2026-10-19"
+ },
+ {
+  "ts": "2026-10-20 00:30",
+  "pole": "P-09",
+  "type": "power",
+  "summary": "USB overcurrent moved payment device port, payment connection failed.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e123",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 10:20",
+  "pole": "fleet",
+  "type": "labeler_lag",
+  "summary": "Review stalled since prior day, hundreds of pole days pending.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e124",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 11:43",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Deployed firmware with departure photo and payment terminal fix to all poles.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e125",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 13:07",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Started fleet engine rollout with exit photo, seed and plate rules.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e126",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 13:50",
+  "pole": "fleet",
+  "type": "missed_plate",
+  "summary": "Twenty-one poles sent zero plate updates after restart, delivery code fault.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e127",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 14:30",
+  "pole": "P-03",
+  "type": "false_occupancy",
+  "summary": "Bay shows frequent false parking sessions with low confidence.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e128",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 23:41",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Held for producer review, departure preserved in journal via ack.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e129",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-20 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 39/39 poles reported every hour; 6 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e130",
+  "day": "2026-10-20"
+ },
+ {
+  "ts": "2026-10-21 00:48",
+  "pole": "P-23",
+  "type": "reboot",
+  "summary": "Pole rebooted, running older plate logic without latest rules.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e131",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 03:00",
+  "pole": "P-23",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting for 6 h (03:00-09:00).",
+  "resolution": "",
+  "id": "e132",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 07:52",
+  "pole": "P-15",
+  "type": "hold",
+  "summary": "Held for producer review, force exit failed until manual intervention.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e133",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 09:32",
+  "pole": "P-38",
+  "type": "config",
+  "summary": "Worker input queue changed to drop oldest sample to prevent stalls.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e134",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 10:33",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Rolled out secondary camera fix restoring plate delivery to affected poles.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e135",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 10:33",
+  "pole": "fleet",
+  "type": "billing_case",
+  "summary": "About five hundred sessions lacked plates, may need settlement handling.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e136",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 11:14",
+  "pole": "P-10",
+  "type": "hold",
+  "summary": "History delivery stopped on producer fault, hold left for manual reconcile.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e137",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 11:15",
+  "pole": "P-10",
+  "type": "false_occupancy",
+  "summary": "Merchant cart triggers parking sessions though not a parked car.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e138",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 13:17",
+  "pole": "P-21",
+  "type": "missed_plate",
+  "summary": "Session ended without plate by character agreement blank rule.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e139",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 13:48",
+  "pole": "P-24",
+  "type": "missed_plate",
+  "summary": "Early short window found no track, retry blocked, plate missing.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e140",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 14:09",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Started fleet rollout of recovery contract and plate fixes including worker update.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e141",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 15:38",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Engine restarted with forced firmware context to apply pending fixes",
+  "resolution": "Hold left for version recovery; bay occupied",
+  "source": "logbook",
+  "id": "e142",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 15:45",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Rear exit probe path moved to writable storage for service sandbox",
+  "resolution": "Rolled in empty bay only mode; needs engine restart",
+  "source": "logbook",
+  "id": "e143",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 16:22",
+  "pole": "fleet",
+  "type": "engine_restart",
+  "summary": "All poles restarted for photo selection and rear probe fix",
+  "resolution": "Front and rear captures verified on three bays; holds left for recovery",
+  "source": "logbook",
+  "id": "e144",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:08",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Multiple bays remain held waiting for version recovery after restart",
+  "resolution": "P-13 to P-23 and several B bays held",
+  "source": "logbook",
+  "id": "e145",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:18",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Empty bay recovery failed with database interface error in journal",
+  "resolution": "Needs journal lock fix; same request can be retried after restart",
+  "source": "logbook",
+  "id": "e146",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:19",
+  "pole": "P-17",
+  "type": "hold",
+  "summary": "Recovery stalled at fault cleared with producer unavailable still present",
+  "resolution": "Journal stopped; needs lock fix and restart",
+  "source": "logbook",
+  "id": "e147",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:19",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Firmware sending rear entry exit photos deployed fleet wide",
+  "resolution": "Control center now shows both front and rear photos",
+  "source": "logbook",
+  "id": "e148",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:24",
+  "pole": "fleet",
+  "type": "engine_restart",
+  "summary": "Journal lock fix restart started on nine poles across zones",
+  "resolution": "Paused after nine poles; thirty remain including two stuck recoveries",
+  "source": "logbook",
+  "id": "e149",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:35",
+  "pole": "P-10",
+  "type": "other",
+  "summary": "Journal showed producer unavailable again blocking history connection",
+  "resolution": "Fault acknowledged before empty bay rehandover",
+  "source": "logbook",
+  "id": "e150",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 17:58",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Occupied held bays rehanded over as same vehicle continuing",
+  "resolution": "All poles show normal history connection",
+  "source": "logbook",
+  "id": "e151",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:00",
+  "pole": "P-24",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting for 1 h (18:00-19:00).",
+  "resolution": "",
+  "id": "e152",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:08",
+  "pole": "P-30",
+  "type": "billing_case",
+  "summary": "Manual arrival corrected with estimated departure after car left",
+  "resolution": "Sessions closed to avoid overcharge; hold released",
+  "source": "logbook",
+  "id": "e153",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:17",
+  "pole": "fleet",
+  "type": "power",
+  "summary": "Nine bays powered down for removal work",
+  "resolution": "Engines will need rehandover when power returns",
+  "source": "logbook",
+  "id": "e154",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:17",
+  "pole": "fleet",
+  "type": "offline",
+  "summary": "Three bays removed and unreachable during construction work",
+  "resolution": "Reinstall and setup checks pending when power returns",
+  "source": "logbook",
+  "id": "e155",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:19",
+  "pole": "P-33",
+  "type": "billing_case",
+  "summary": "Manual arrival during removal likely workers not parked car",
+  "resolution": "Needs cancel or forced exit in control to avoid fee",
+  "source": "logbook",
+  "id": "e156",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 18:35",
+  "pole": "P-22",
+  "type": "billing_case",
+  "summary": "Manual arrival registered for car present without open session",
+  "resolution": "Entry set at engine arrival time",
+  "source": "logbook",
+  "id": "e157",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 19:00",
+  "pole": "P-33",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting to the archive at 19:00; no data since.",
+  "resolution": "",
+  "id": "e158",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 19:00",
+  "pole": "P-34",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting to the archive at 19:00; no data since.",
+  "resolution": "",
+  "id": "e159",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 19:00",
+  "pole": "P-35",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting to the archive at 19:00; no data since.",
+  "resolution": "",
+  "id": "e160",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 19:18",
+  "pole": "P-26",
+  "type": "billing_case",
+  "summary": "Open session auto closed at power on time after outage",
+  "resolution": "Exit may overcharge up to hour; needs correction in control",
+  "source": "logbook",
+  "id": "e161",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 19:18",
+  "pole": "fleet",
+  "type": "power",
+  "summary": "Power restored in B bays after outage",
+  "resolution": "Engines rebooted; holds need rehandover",
+  "source": "logbook",
+  "id": "e162",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 20:03",
+  "pole": "P-24",
+  "type": "other",
+  "summary": "Front camera unavailable with zero front frames, rear still works",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e163",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 20:03",
+  "pole": "P-26",
+  "type": "other",
+  "summary": "Payment terminal serial unreadable, payment connection down",
+  "resolution": "No payment in progress; terminal power cycle may help",
+  "source": "logbook",
+  "id": "e164",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 20:16",
+  "pole": "P-24",
+  "type": "engine_restart",
+  "summary": "Pole service restarted after stopping video relay to free camera",
+  "resolution": "Front camera initialized; detection loop running; hold left",
+  "source": "logbook",
+  "id": "e165",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 21:21",
+  "pole": "P-38",
+  "type": "other",
+  "summary": "Single unhealthy producer reading saved as permanent journal fault",
+  "resolution": "Appends refused; needs recovery",
+  "source": "logbook",
+  "id": "e166",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-21 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 34/39 poles reported every hour; 22 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e167",
+  "day": "2026-10-21"
+ },
+ {
+  "ts": "2026-10-22 09:25",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Held bay recovered through firmware fix without engine restart",
+  "resolution": "Baseline verified same stream; requires review false",
+  "source": "logbook",
+  "id": "e168",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 09:58",
+  "pole": "fleet",
+  "type": "engine_restart",
+  "summary": "Thirty six poles restarted for lightened photo selection",
+  "resolution": "All passed marker, start time, flag and history checks",
+  "source": "logbook",
+  "id": "e169",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 10:00",
+  "pole": "P-24",
+  "type": "hold",
+  "summary": "Restart coincided with departure, bay held",
+  "resolution": "Departure finished manually after confirming empty",
+  "source": "logbook",
+  "id": "e170",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 10:30",
+  "pole": "P-12",
+  "type": "network",
+  "summary": "Pole upload failed once over secure shell, retry succeeded",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e171",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 12:00",
+  "pole": "P-26",
+  "type": "field_visit",
+  "summary": "On-site engineer fixed terminal network fault",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e172",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 12:57",
+  "pole": "P-24",
+  "type": "billing_case",
+  "summary": "Payment failed, customer used neighboring bay instead",
+  "resolution": "Resolution status unconfirmed",
+  "source": "logbook",
+  "id": "e173",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 15:54",
+  "pole": "P-26",
+  "type": "reboot",
+  "summary": "Payment controller rebooted after day long internet outage",
+  "resolution": "Payment test passed",
+  "source": "logbook",
+  "id": "e174",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-22 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 3 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e175",
+  "day": "2026-10-22"
+ },
+ {
+  "ts": "2026-10-23 10:29",
+  "pole": "P-20",
+  "type": "config",
+  "summary": "Fault delay flag enabled on single bay for testing",
+  "resolution": "Other bays remain off",
+  "source": "logbook",
+  "id": "e176",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 10:43",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Firmware auto resume after stable empty deployed to operating bays",
+  "resolution": "Unknown exit times split as review required without invented times",
+  "source": "logbook",
+  "id": "e177",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 10:55",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Labeling server disk reached ninety three percent full",
+  "resolution": "Old video deleted to free space",
+  "source": "logbook",
+  "id": "e178",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 13:05",
+  "pole": "P-20",
+  "type": "config",
+  "summary": "Fault delay test ended and flag turned off",
+  "resolution": "Firmware matches common release; no engine restart",
+  "source": "logbook",
+  "id": "e179",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 13:39",
+  "pole": "P-39",
+  "type": "missed_plate",
+  "summary": "Parking judgement flickered causing confirmed plate to drop",
+  "resolution": "Second session ended without vote on single camera",
+  "source": "logbook",
+  "id": "e180",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 14:10",
+  "pole": "P-31",
+  "type": "missed_plate",
+  "summary": "Entry session assigned neighboring bay number by front camera",
+  "resolution": "Needs correction in control; neighbor unconfirmed so not excluded",
+  "source": "logbook",
+  "id": "e181",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 14:10",
+  "pole": "P-31",
+  "type": "missed_plate",
+  "summary": "Wrong bay attached session requested for correction",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e182",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 14:18",
+  "pole": "P-39",
+  "type": "engine_restart",
+  "summary": "Engine restarted after raising retry limit and adding carry over",
+  "resolution": "Bay empty, history completed, no errors last hour",
+  "source": "logbook",
+  "id": "e183",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 14:19",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Retry and carry over fix forced to remaining bays",
+  "resolution": "Three done at first check with no failures",
+  "source": "logbook",
+  "id": "e184",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:11",
+  "pole": "P-23",
+  "type": "hold",
+  "summary": "Same continuity hold cleared by firmware side",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e185",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:12",
+  "pole": "P-32",
+  "type": "config",
+  "summary": "Detection region lengthened after straddling park obscured plate",
+  "resolution": "New coordinates unconfirmed due to access failure",
+  "source": "logbook",
+  "id": "e186",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:14",
+  "pole": "P-08",
+  "type": "network",
+  "summary": "Secure shell upload failed during rollout, two bays remaining",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e187",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:22",
+  "pole": "P-32",
+  "type": "billing_case",
+  "summary": "Repeat unpaid vehicle left without paying after manual guidance",
+  "resolution": "Unpaid follow up pending decision",
+  "source": "logbook",
+  "id": "e188",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:30",
+  "pole": "P-39",
+  "type": "engine_restart",
+  "summary": "Engine restarted manually before empty rebaseline",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e189",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:31",
+  "pole": "P-39",
+  "type": "hold",
+  "summary": "Empty rebaseline held empty 30 minutes hiding arrival",
+  "resolution": "Released at 15:52 model agreed",
+  "source": "logbook",
+  "id": "e190",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:31",
+  "pole": "fleet",
+  "type": "config",
+  "summary": "Neighbor unconfirmed exclusion enabled on all operating bays",
+  "resolution": "Most holds cleared automatically after restart",
+  "source": "logbook",
+  "id": "e191",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 15:40",
+  "pole": "P-25",
+  "type": "hold",
+  "summary": "Continuity unverified hold blocked by busy recovery response",
+  "resolution": "Release requested from firmware side",
+  "source": "logbook",
+  "id": "e192",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 16:00",
+  "pole": "P-25",
+  "type": "hold",
+  "summary": "Hold cleared via control web confirmed",
+  "resolution": "Cleared via control web",
+  "source": "logbook",
+  "id": "e193",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 16:00",
+  "pole": "P-32",
+  "type": "network",
+  "summary": "External access port blocked reached via neighboring bay",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e194",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 16:44",
+  "pole": "fleet",
+  "type": "labeler_lag",
+  "summary": "Three bays review labels not yet arrived",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e195",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 18:05",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "OCR v1.4 plus track fragment merge patch rollout",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e196",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 18:05",
+  "pole": "fleet",
+  "type": "engine_restart",
+  "summary": "Engines restarted for deployment round",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e197",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-23 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 20 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e198",
+  "day": "2026-10-23"
+ },
+ {
+  "ts": "2026-10-24 01:48",
+  "pole": "P-39",
+  "type": "hold",
+  "summary": "Hold not cleared night model score stayed mid range",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e199",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 01:49",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "OCR v1.5 rollout started excluding two bays on hold",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e200",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:00",
+  "pole": "P-11",
+  "type": "hold",
+  "summary": "Producer unavailable hold with open session while empty",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e201",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:00",
+  "pole": "P-38",
+  "type": "hold",
+  "summary": "Producer unavailable hold with no session while occupied",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e202",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:00",
+  "pole": "P-39",
+  "type": "false_occupancy",
+  "summary": "Empty bay read as occupied creating two dawn sessions",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e203",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:18",
+  "pole": "P-38",
+  "type": "deploy",
+  "summary": "OCR v1.5 applied after empty observation rebaseline",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e204",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:19",
+  "pole": "P-11",
+  "type": "network",
+  "summary": "External port closed accessed via neighboring bay LAN",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e205",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 04:20",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "OCR v1.5 completed on all 36 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e206",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 05:11",
+  "pole": "P-38",
+  "type": "false_occupancy",
+  "summary": "Empty bay read as occupied creating four hour session",
+  "resolution": "Session ended 09:34",
+  "source": "logbook",
+  "id": "e207",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 09:00",
+  "pole": "P-33",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 3 days).",
+  "resolution": "",
+  "id": "e208",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 09:00",
+  "pole": "P-34",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 3 days).",
+  "resolution": "",
+  "id": "e209",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 09:00",
+  "pole": "P-35",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 3 days).",
+  "resolution": "",
+  "id": "e210",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-24 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e211",
+  "day": "2026-10-24"
+ },
+ {
+  "ts": "2026-10-25 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e212",
+  "day": "2026-10-25"
+ },
+ {
+  "ts": "2026-10-26 09:59",
+  "pole": "P-23",
+  "type": "missed_plate",
+  "summary": "Retry read passing car plate instead of bay vehicle corrected",
+  "resolution": "Record corrected by operator",
+  "source": "logbook",
+  "id": "e213",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 17:18",
+  "pole": "fleet",
+  "type": "network",
+  "summary": "Control server communication outage blocked payments 22 minutes",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e214",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 17:27",
+  "pole": "P-27",
+  "type": "billing_case",
+  "summary": "Payment button failed stay booked as equipment error charge",
+  "resolution": "Booked as equipment error charge",
+  "source": "logbook",
+  "id": "e215",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 17:46",
+  "pole": "P-38",
+  "type": "billing_case",
+  "summary": "Card terminal rejected confirmed fare with error repeated",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e216",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 18:00",
+  "pole": "P-24",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Stopped reporting for 1 h (18:00-19:00).",
+  "resolution": "",
+  "id": "e217",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 18:10",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Far plate block plus dwell reader rollout started",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e218",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 18:22",
+  "pole": "P-38",
+  "type": "billing_case",
+  "summary": "Evening payment failure logged, cause undetermined, recovered next morning",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e219",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 18:27",
+  "pole": "fleet",
+  "type": "power",
+  "summary": "Nine bays lost power returned after about one hour",
+  "resolution": "Power returned at 19:23",
+  "source": "logbook",
+  "id": "e220",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 19:23",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Six bays stayed on hold after power return",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e221",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 22:43",
+  "pole": "P-15",
+  "type": "network",
+  "summary": "USB link write error logged, terminal reconnected afterwards",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e222",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-26 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 35/39 poles reported every hour; 7 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e223",
+  "day": "2026-10-26"
+ },
+ {
+  "ts": "2026-10-27 02:00",
+  "pole": "fleet",
+  "type": "power",
+  "summary": "Overnight power loss affected three bays, later approvals normal",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e224",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 06:33",
+  "pole": "P-05",
+  "type": "hold",
+  "summary": "Bay returned busy on context query, history link normal",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e225",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 06:33",
+  "pole": "P-24",
+  "type": "hold",
+  "summary": "Bay returned busy on context query, history link normal",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e226",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 09:00",
+  "pole": "P-33",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 6 days).",
+  "resolution": "",
+  "id": "e227",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 09:00",
+  "pole": "P-34",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 6 days).",
+  "resolution": "",
+  "id": "e228",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 09:00",
+  "pole": "P-35",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 6 days).",
+  "resolution": "",
+  "id": "e229",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 10:02",
+  "pole": "P-26",
+  "type": "billing_case",
+  "summary": "Seven quick low-amount failures then normal approvals later",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e230",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 14:12",
+  "pole": "fleet",
+  "type": "disk",
+  "summary": "Pole disk 84 percent used observed during review",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e231",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 18:22",
+  "pole": "P-20",
+  "type": "deploy",
+  "summary": "Separate-process reader canary applied when bay emptied",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e232",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 18:27",
+  "pole": "P-20",
+  "type": "rollback",
+  "summary": "Canary disabled after 62-second read hit job limit",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e233",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 18:32",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Engine restarted on old version with car present by tool error",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e234",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 18:44",
+  "pole": "P-20",
+  "type": "deploy",
+  "summary": "Second canary version applied when bay empty",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e235",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 20:15",
+  "pole": "P-20",
+  "type": "rollback",
+  "summary": "Second version disabled after 36 to 70 second slow reads",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e236",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-27 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e237",
+  "day": "2026-10-27"
+ },
+ {
+  "ts": "2026-10-28 13:37",
+  "pole": "P-24",
+  "type": "billing_case",
+  "summary": "Payment failed with card error shown on terminal screen",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e238",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-28 13:37",
+  "pole": "P-26",
+  "type": "billing_case",
+  "summary": "Payment failed with expired card, exemption canceled",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e239",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-28 14:19",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Dataset disk full, capture folder without retention policy",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e240",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-28 16:20",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Video volume 93 percent full, about two days remaining",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e241",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-28 16:21",
+  "pole": "server",
+  "type": "labeler_lag",
+  "summary": "Label collector queue corrupted, daily collection stopped, backfill scheduled",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e242",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-28 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e243",
+  "day": "2026-10-28"
+ },
+ {
+  "ts": "2026-10-29 18:05",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Engine restarted, exit reader enabled in store-only mode",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e244",
+  "day": "2026-10-29"
+ },
+ {
+  "ts": "2026-10-29 20:00",
+  "pole": "P-20",
+  "type": "missed_plate",
+  "summary": "Four plateless ended sessions, two identified two unreadable",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e245",
+  "day": "2026-10-29"
+ },
+ {
+  "ts": "2026-10-29 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e246",
+  "day": "2026-10-29"
+ },
+ {
+  "ts": "2026-10-30 01:58",
+  "pole": "P-20",
+  "type": "engine_restart",
+  "summary": "Engine restarted to enable shadow selector logging mode",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e247",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 08:30",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Video volume 62 percent after cleanup, daily growth 0.7TB",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e248",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 08:31",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Training server 93 percent full, 34GB free, days remaining",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e249",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 09:00",
+  "pole": "P-33",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 9 days).",
+  "resolution": "",
+  "id": "e250",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 09:00",
+  "pole": "P-34",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 9 days).",
+  "resolution": "",
+  "id": "e251",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 09:00",
+  "pole": "P-35",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 9 days).",
+  "resolution": "",
+  "id": "e252",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 11:11",
+  "pole": "P-04",
+  "type": "hold",
+  "summary": "Firmware reconnection hold active, no open session",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e253",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 11:12",
+  "pole": "P-04",
+  "type": "engine_restart",
+  "summary": "Engine restarted once for late-report test preparation",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e254",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 11:41",
+  "pole": "P-04",
+  "type": "missed_plate",
+  "summary": "First single-test run ended unreadable, no exit plate movement",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e255",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 12:24",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Firmware with late-report support deployed to 36 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e256",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 13:56",
+  "pole": "P-23",
+  "type": "hold",
+  "summary": "Bay left untouched due to open session during rollout",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e257",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 15:37",
+  "pole": "P-28",
+  "type": "false_occupancy",
+  "summary": "New parking flagged needs-review from prior session dwell state",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e258",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 18:30",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Exit reader and selector logging enabled on 35 bays",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e259",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 19:32",
+  "pole": "P-25",
+  "type": "offline",
+  "summary": "Bay without firmware session for two hours, fare not counted",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e260",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 22:00",
+  "pole": "P-38",
+  "type": "missed_plate",
+  "summary": "Short 8-second session filled with neighboring bay number",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e261",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 23:47",
+  "pole": "fleet",
+  "type": "offline",
+  "summary": "Five bays unreachable during overnight log aggregation",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e262",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-30 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 8 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e263",
+  "day": "2026-10-30"
+ },
+ {
+  "ts": "2026-10-31 07:30",
+  "pole": "P-20",
+  "type": "missed_plate",
+  "summary": "Five overnight exit reads failed with no plate",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e264",
+  "day": "2026-10-31"
+ },
+ {
+  "ts": "2026-10-31 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e265",
+  "day": "2026-10-31"
+ },
+ {
+  "ts": "2026-11-01 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e266",
+  "day": "2026-11-01"
+ },
+ {
+  "ts": "2026-11-02 09:00",
+  "pole": "P-31",
+  "type": "missed_plate",
+  "summary": "P-31 stuck showing recognizing for one hour, identity empty despite engine identification",
+  "resolution": "Fixed in tests to ship with selector patch",
+  "source": "logbook",
+  "id": "e267",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:00",
+  "pole": "P-33",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 12 days).",
+  "resolution": "",
+  "id": "e268",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:00",
+  "pole": "P-34",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 12 days).",
+  "resolution": "",
+  "id": "e269",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:00",
+  "pole": "P-35",
+  "type": "telemetry_gap",
+  "source": "telemetry",
+  "summary": "Still not reporting to the archive (silent for 12 days).",
+  "resolution": "",
+  "id": "e270",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:30",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Video disk about four days from full with high daily growth",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e271",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:30",
+  "pole": "server",
+  "type": "config",
+  "summary": "Installed protected video hold links with twice daily refresh",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e272",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 09:47",
+  "pole": "P-23",
+  "type": "engine_restart",
+  "summary": "P-23 engine restarted to common set, health showed occupied without errors",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e273",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 10:05",
+  "pole": "server",
+  "type": "disk",
+  "summary": "First retention cleanup started, usage dropped from 77 to 73 percent",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e274",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 10:10",
+  "pole": "fleet",
+  "type": "hold",
+  "summary": "Four bays on history hold with zero overnight sessions, possible missed billing",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e275",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 10:30",
+  "pole": "server",
+  "type": "disk",
+  "summary": "First cleanup finished, reclaimed about 1.4 terabytes, usage 77 to 71 percent",
+  "resolution": "Hardlink protection kept reviewed files, verified by hold folder count",
+  "source": "logbook",
+  "id": "e276",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 12:35",
+  "pole": "fleet",
+  "type": "billing_case",
+  "summary": "Five paid sessions without plate due to exit read failures",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e277",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 12:38",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Engine patch rollout started with pilot bay then sequential remaining poles",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e278",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 13:37",
+  "pole": "P-18",
+  "type": "hold",
+  "summary": "Occupied re-link refused busy, hold for unverified connection continuity",
+  "resolution": "Retry succeeded, history connection normal",
+  "source": "logbook",
+  "id": "e279",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 13:37",
+  "pole": "P-19",
+  "type": "hold",
+  "summary": "Empty re-link refused context not empty, hold for unverified connection",
+  "resolution": "History connection read normal without further action",
+  "source": "logbook",
+  "id": "e280",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 13:48",
+  "pole": "fleet",
+  "type": "network",
+  "summary": "Group B router ports refused connections for two minutes then recovered",
+  "resolution": "Recovered after two minutes, cause unknown",
+  "source": "logbook",
+  "id": "e281",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 14:50",
+  "pole": "fleet",
+  "type": "billing_case",
+  "summary": "Ninety paid sessions without plate, video kept for 59, missing for 31",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e282",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 15:10",
+  "pole": "server",
+  "type": "config",
+  "summary": "Paused automatic deletion with stop file, hold refresh continues",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e283",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 16:05",
+  "pole": "fleet",
+  "type": "config",
+  "summary": "Installed read-only pole access on 36 poles with frequent server polling",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e284",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 16:11",
+  "pole": "P-04",
+  "type": "deploy",
+  "summary": "Plate fill firmware deployed to single pilot pole",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e285",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 16:58",
+  "pole": "P-04",
+  "type": "config",
+  "summary": "Turned on late fill switch without restart, service active and healthy",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e286",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 21:18",
+  "pole": "server",
+  "type": "deploy",
+  "summary": "Labeler rebuilt from release source with two fixes, live and monitored",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e287",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-02 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 8 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e288",
+  "day": "2026-11-02"
+ },
+ {
+  "ts": "2026-11-03 16:15",
+  "pole": "fleet",
+  "type": "deploy",
+  "summary": "Plate photo fill firmware deployed to 36 poles with successful transmissions",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e289",
+  "day": "2026-11-03"
+ },
+ {
+  "ts": "2026-11-03 16:32",
+  "pole": "fleet",
+  "type": "config",
+  "summary": "Turned on late fill switch on remaining 35 poles, all 36 now on",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e290",
+  "day": "2026-11-03"
+ },
+ {
+  "ts": "2026-11-03 16:43",
+  "pole": "server",
+  "type": "deploy",
+  "summary": "Labeler version 0.1.22 released and deployed with log handling fixes",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e291",
+  "day": "2026-11-03"
+ },
+ {
+  "ts": "2026-11-03 16:52",
+  "pole": "P-19",
+  "type": "reboot",
+  "summary": "P-19 rebooted with truncated video files around reboot time",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e292",
+  "day": "2026-11-03"
+ },
+ {
+  "ts": "2026-11-03 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e293",
+  "day": "2026-11-03"
+ },
+ {
+  "ts": "2026-11-04 01:02",
+  "pole": "P-23",
+  "type": "reboot",
+  "summary": "Pole rebooted at 01:02 (uptime reset); engine came back on its own.",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e294",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 02:40",
+  "pole": "server",
+  "type": "labeler_lag",
+  "summary": "Video registration about eight hours behind with file read failures",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e295",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 10:00",
+  "pole": "server",
+  "type": "labeler_lag",
+  "summary": "Registration delay 9.1 hours, intake slower than inflow under high load",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e296",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 10:00",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Video disk at 78 percent with four terabytes free",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e297",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 10:22",
+  "pole": "server",
+  "type": "config",
+  "summary": "Reduced compression jobs from eight to five effective next run",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e298",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 14:00",
+  "pole": "server",
+  "type": "labeler_lag",
+  "summary": "Delay 2.9 hours after improvement, compression starving registration CPU",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e299",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 14:19",
+  "pole": "server",
+  "type": "config",
+  "summary": "Set compression to two jobs daytime and five nighttime",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e300",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 14:30",
+  "pole": "server",
+  "type": "disk",
+  "summary": "Duplicate log cleanup finished, removed about 1.27 terabytes, usage 72 percent",
+  "resolution": "",
+  "source": "logbook",
+  "id": "e301",
+  "day": "2026-11-04"
+ },
+ {
+  "ts": "2026-11-04 23:59",
+  "pole": "fleet",
+  "type": "digest",
+  "source": "telemetry",
+  "summary": "Daily digest: 36/39 poles reported every hour; 0 quiet daytime pole-hours fleet-wide.",
+  "resolution": "",
+  "id": "e302",
+  "day": "2026-11-04"
+ }
+]

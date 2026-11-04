@@ -1,0 +1,77 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>cards</title>
+<style>
+  :root{--bg:#0a0c11;--line:#232836;--text:#e9ecf3;--dim:#8a93a8;--blue:#4c8dff;--green:#35c58a;--red:#ff5d6c;--amber:#f2b84b;--violet:#a88bff;--teal:#38c7d0}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:22px/1.5 -apple-system,BlinkMacSystemFont,"Inter",sans-serif}
+  .card{display:none;height:100%;padding:80px 110px;box-sizing:border-box;flex-direction:column;justify-content:center}
+  .card.on{display:flex}
+  .logo{width:62px;height:62px;border-radius:16px;background:linear-gradient(135deg,var(--blue),var(--violet));display:grid;place-items:center;font-weight:800;font-size:32px;margin-bottom:26px}
+  h1{font-size:66px;margin:0 0 12px;letter-spacing:-.6px} h2{font-size:46px;margin:0 0 22px;letter-spacing:-.4px;line-height:1.2}
+  .sub{font-size:27px;color:var(--dim)} .tag{font-size:17px;color:var(--dim);margin-top:38px;letter-spacing:1px;text-transform:uppercase}
+  .big{font-size:54px;font-weight:700;letter-spacing:-.5px;line-height:1.2} .big .r{color:var(--red)} .big .v{color:var(--violet)}
+  .row{display:flex;gap:18px;margin-top:18px} .box{flex:1;border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:#11141b}
+  .box b{display:block;font-size:23px;margin-bottom:6px} .box span{color:var(--dim);font-size:18px;line-height:1.45}
+  .t b{color:var(--teal)} .v b{color:var(--violet)} .g b{color:var(--green)} .a b{color:var(--amber)}
+  .stat{display:flex;gap:40px;margin-top:26px} .stat div{font-size:20px;color:var(--dim)} .stat b{display:block;font-size:46px;color:var(--text);letter-spacing:-.5px}
+  table{border-collapse:collapse;margin-top:18px;font-size:23px} td,th{padding:12px 22px;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--dim);font-weight:500;font-size:18px} tr.us td{color:var(--text)} tr.us td:first-child{color:var(--violet);font-weight:700}
+  .note{font-size:17px;color:var(--dim);margin-top:16px}
+  ul{margin:8px 0 0;padding-left:26px} li{margin:8px 0}
+</style></head>
+<body>
+<section class="card" id="title">
+  <div class="logo">F</div>
+  <h1>Forget Fleet</h1>
+  <div class="sub">Weeks-long memory for an always-on Muse Glimmer agent.</div>
+  <div class="tag">Meta Global AI Developer Hackathon · Startups track · Multi-turn Inc.</div>
+</section>
+<section class="card" id="hook">
+  <div class="big">Monitoring tells you what's broken now.<br><span class="v">Memory tells you it's the third time.</span></div>
+</section>
+<section class="card" id="context">
+  <h2>We run 39 smart-parking poles in Korea, 24/7.</h2>
+  <div class="sub">Cameras, plate readers and an engine on every pole. Things break slowly: a reboot here, a hold there, a rollout that half-lands.</div>
+  <div class="stat"><div><b id="nev">302</b>real events, Oct 9 - Nov 4</div><div><b>27</b>days replayed</div><div><b>0</b>images, plates or names used</div></div>
+  <div class="note">Events come from our own ops logbook and archive telemetry, anonymised. Site and pole names are changed.</div>
+</section>
+<section class="card" id="gap">
+  <h2>Muse Glimmer is built for always-on local agents.</h2>
+  <div class="sub">Its built-in memory covers hours-long sessions. Fleets fail across weeks.</div>
+  <div class="row">
+    <div class="box t"><b>Muse Glimmer 30B</b><span>runs the agent locally on one DGX Spark, around the clock. No per-token cost, data stays on our box.</span></div>
+    <div class="box g"><b>+ Forget memory</b><span>decides what is worth carrying for weeks, links repeats, resolves fixes, and keeps a receipt for every claim.</span></div>
+  </div>
+</section>
+<section class="card" id="how">
+  <h2>How the agent thinks, every day</h2>
+  <div class="row">
+    <div class="box t"><b>1 · WRITE</b><span>Glimmer reads the day's events and decides: remember, link to an earlier memory, resolve, supersede, or ignore.</span></div>
+    <div class="box t"><b>2 · RECALL</b><span>When a pole's failures recur on 3+ days, Glimmer writes an alert from memory, citing the exact events.</span></div>
+    <div class="box a"><b>3 · CHECK</b><span>Code confirms every cited event exists and is the same pole. No receipt, no alert.</span></div>
+    <div class="box v"><b>4 · VERIFY / ESCALATE</b><span>Muse Spark independently verifies alerts and diagnoses fleet-wide same-day spikes.</span></div>
+  </div>
+</section>
+<section class="card" id="eval">
+  <h2 id="evtitle">Ten operator questions that need weeks of history</h2>
+  <table id="evtable"></table>
+  <div class="note" id="evnote"></div>
+</section>
+<section class="card" id="close">
+  <div class="logo">F</div>
+  <h2>Forget Fleet</h2>
+  <ul class="sub" id="closelist"></ul>
+  <div class="tag" id="repo">github.com/hebo1221/forget-fleet</div>
+</section>
+<script>
+const q = new URLSearchParams(location.search);
+document.getElementById(q.get('card') || 'title').classList.add('on');
+if (q.get('nev')) document.getElementById('nev').textContent = q.get('nev');
+if (q.get('eval')) {
+  const e = JSON.parse(q.get('eval'));
+  document.getElementById('evtable').innerHTML = `<tr><th>Same model: Muse Glimmer 30B, local</th><th>Answer score</th><th>Prompt tokens / question</th><th>Seconds / answer</th></tr>` +
+    e.rows.map(r => `<tr class="${r.us?'us':''}"><td>${r.name}</td><td>${r.score}</td><td>${r.tokens}</td><td>${r.sec}</td></tr>`).join('');
+  document.getElementById('evnote').textContent = e.note;
+}
+if (q.get('close')) document.getElementById('closelist').innerHTML = JSON.parse(q.get('close')).map(x => `<li>${x}</li>`).join('');
+</script>
+</body></html>

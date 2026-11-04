@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+runs/*.log
+runs/archive/
+video/frames/
+video/*.webm
+data/logbook_sections.json
+data/logbook_chunk*.json
+data/logbook_events.json
+data/hourly_presence_utc.csv

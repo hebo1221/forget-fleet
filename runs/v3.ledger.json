@@ -1,0 +1,2753 @@
+{
+ "items": [
+  {
+   "id": "m1",
+   "pole": "P-05",
+   "kind": "incident",
+   "text": "P-05 archive volume was below 20% of normal for 5 daytime hours starting 08:00 on 2026-10-09.",
+   "status": "open",
+   "events": [
+    "e1",
+    "e3"
+   ],
+   "first_ts": "2026-10-09 08:00",
+   "last_ts": "2026-10-10 08:00",
+   "created_day": "2026-10-09",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m2",
+   "pole": "P-22",
+   "kind": "incident",
+   "text": "P-22 control stuck showing parked while engine reads empty on 2026-10-12 18:35.",
+   "status": "resolved",
+   "events": [
+    "e6"
+   ],
+   "first_ts": "2026-10-12 18:35",
+   "last_ts": "2026-10-12 18:35",
+   "created_day": "2026-10-12",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": "m11",
+   "history": []
+  },
+  {
+   "id": "m3",
+   "pole": "P-30",
+   "kind": "incident",
+   "text": "P-30 experienced a firmware history hold with control frozen due to missing producer on 2026-10-13 at 07:13.",
+   "status": "open",
+   "events": [
+    "e8"
+   ],
+   "first_ts": "2026-10-13 07:13",
+   "last_ts": "2026-10-13 07:13",
+   "created_day": "2026-10-13",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m4",
+   "pole": "P-31",
+   "kind": "incident",
+   "text": "P-31 experienced a firmware history hold with control frozen due to missing producer on 2026-10-13 at 07:14.",
+   "status": "open",
+   "events": [
+    "e9",
+    "e91"
+   ],
+   "first_ts": "2026-10-13 07:14",
+   "last_ts": "2026-10-17 11:36",
+   "created_day": "2026-10-13",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m5",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "On 2026-10-14 fleet auxiliary workers degraded with 22 failed, 6 not installed and 2 inactive.",
+   "status": "open",
+   "events": [
+    "e11"
+   ],
+   "first_ts": "2026-10-14 13:45",
+   "last_ts": "2026-10-14 13:45",
+   "created_day": "2026-10-14",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m6",
+   "pole": "P-26",
+   "kind": "belief",
+   "text": "On 2026-10-14 P-26 had three capture files installed on live operating path.",
+   "status": "open",
+   "events": [
+    "e12"
+   ],
+   "first_ts": "2026-10-14 14:42",
+   "last_ts": "2026-10-14 14:42",
+   "created_day": "2026-10-14",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m7",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "On 2026-10-14 P-26 engine restarted once with process id changed.",
+   "status": "open",
+   "events": [
+    "e13",
+    "e22"
+   ],
+   "first_ts": "2026-10-14 15:07",
+   "last_ts": "2026-10-15 01:31",
+   "created_day": "2026-10-14",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m8",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "On 2026-10-14 P-26 declared false arrival in empty bay and did not forward the event.",
+   "status": "open",
+   "events": [
+    "e14"
+   ],
+   "first_ts": "2026-10-14 16:19",
+   "last_ts": "2026-10-14 16:19",
+   "created_day": "2026-10-14",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m9",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "On 2026-10-15 P-26 reported empty while bay occupied with model correct.",
+   "status": "open",
+   "events": [
+    "e16"
+   ],
+   "first_ts": "2026-10-15 00:07",
+   "last_ts": "2026-10-15 00:07",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m10",
+   "pole": "P-24",
+   "kind": "incident",
+   "text": "On 2026-10-15 P-24 engine restarted to fix new-model handoff rejection.",
+   "status": "open",
+   "events": [
+    "e21"
+   ],
+   "first_ts": "2026-10-15 01:31",
+   "last_ts": "2026-10-15 01:31",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m11",
+   "pole": "P-22",
+   "kind": "fix",
+   "text": "resolved",
+   "status": "open",
+   "events": [
+    "e26"
+   ],
+   "first_ts": "2026-10-15 02:30",
+   "last_ts": "2026-10-15 02:30",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m12",
+   "pole": "P-17",
+   "kind": "incident",
+   "text": "On 2026-10-15 P-17 worker stalled with journal fault and control held, engine restarted with fresh journal and firmware reconnect.",
+   "status": "open",
+   "events": [
+    "e36",
+    "e37"
+   ],
+   "first_ts": "2026-10-15 11:10",
+   "last_ts": "2026-10-15 11:10",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m13",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "On 2026-10-15 P-20 ROI edits caused producer fault and control hold, engine restarted with fresh journal and firmware reconnect.",
+   "status": "open",
+   "events": [
+    "e35",
+    "e38"
+   ],
+   "first_ts": "2026-10-15 11:10",
+   "last_ts": "2026-10-15 11:10",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m14",
+   "pole": "P-19",
+   "kind": "incident",
+   "text": "On 2026-10-15 P-19 became unreachable with connection refused, likely power or network.",
+   "status": "open",
+   "events": [
+    "e46",
+    "e48",
+    "e85"
+   ],
+   "first_ts": "2026-10-15 19:35",
+   "last_ts": "2026-10-17 01:09",
+   "created_day": "2026-10-15",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m15",
+   "pole": "P-36",
+   "kind": "incident",
+   "text": "P-36 went offline with SSH closed and uploads stopped after reconcile on 2026-10-16.",
+   "status": "open",
+   "events": [
+    "e55"
+   ],
+   "first_ts": "2026-10-16 08:25",
+   "last_ts": "2026-10-16 08:25",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m16",
+   "pole": "P-13",
+   "kind": "incident",
+   "text": "P-13 went offline with short entry and exit lost during history unbound window on 2026-10-16.",
+   "status": "open",
+   "events": [
+    "e67"
+   ],
+   "first_ts": "2026-10-16 14:21",
+   "last_ts": "2026-10-16 14:21",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m17",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 telemetry gap 6h after reboot consistent with prior restart-related reporting issues.",
+   "status": "open",
+   "events": [
+    "e73",
+    "e103",
+    "e132"
+   ],
+   "first_ts": "2026-10-16 16:06",
+   "last_ts": "2026-10-21 03:00",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m18",
+   "pole": "P-10",
+   "kind": "incident",
+   "text": "P-10 false occupancy triggered by merchant cart on 2026-10-21.",
+   "status": "open",
+   "events": [
+    "e72",
+    "e138"
+   ],
+   "first_ts": "2026-10-16 15:50",
+   "last_ts": "2026-10-21 11:15",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m19",
+   "pole": "P-16",
+   "kind": "incident",
+   "text": "P-16 occupancy flapped 30 times with many short plated sessions on 2026-10-16.",
+   "status": "open",
+   "events": [
+    "e82"
+   ],
+   "first_ts": "2026-10-16 23:17",
+   "last_ts": "2026-10-16 23:17",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m20",
+   "pole": "P-01",
+   "kind": "incident",
+   "text": "P-01 went offline with SSH closed and uploads stopped after rollout on 2026-10-16, reopened without reboot at 17:16.",
+   "status": "open",
+   "events": [
+    "e77"
+   ],
+   "first_ts": "2026-10-16 17:07",
+   "last_ts": "2026-10-16 17:07",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m21",
+   "pole": "P-30",
+   "kind": "incident",
+   "text": "P-30 missed plate on short stay after split reads on 2026-10-16.",
+   "status": "open",
+   "events": [
+    "e53"
+   ],
+   "first_ts": "2026-10-16 07:50",
+   "last_ts": "2026-10-16 07:50",
+   "created_day": "2026-10-16",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m22",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet tracking method changed to track-first primary with old fallback as of 2026-10-18.",
+   "status": "open",
+   "events": [
+    "e102"
+   ],
+   "first_ts": "2026-10-18 13:36",
+   "last_ts": "2026-10-18 13:36",
+   "created_day": "2026-10-18",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m23",
+   "pole": "P-38",
+   "kind": "incident",
+   "text": "P-38 held for producer review with departure preserved in journal via ack on 2026-10-20.",
+   "status": "resolved",
+   "events": [
+    "e106",
+    "e110",
+    "e129"
+   ],
+   "first_ts": "2026-10-19 11:32",
+   "last_ts": "2026-10-20 23:41",
+   "created_day": "2026-10-19",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": "m32",
+   "history": []
+  },
+  {
+   "id": "m24",
+   "pole": "P-34",
+   "kind": "incident",
+   "text": "P-34 rebooted at 17:02 and caused a hold later cleared.",
+   "status": "open",
+   "events": [
+    "e117"
+   ],
+   "first_ts": "2026-10-19 17:02",
+   "last_ts": "2026-10-19 17:02",
+   "created_day": "2026-10-19",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m25",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 held 3.5 hours unnoticed after external session replaced firmware files.",
+   "status": "open",
+   "events": [
+    "e116"
+   ],
+   "first_ts": "2026-10-19 13:43",
+   "last_ts": "2026-10-19 13:43",
+   "created_day": "2026-10-19",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m26",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet received disk guard, engine startup grace fix and firmware service restart rollout on 2026-10-19.",
+   "status": "open",
+   "events": [
+    "e107",
+    "e113",
+    "e115"
+   ],
+   "first_ts": "2026-10-19 12:47",
+   "last_ts": "2026-10-19 12:47",
+   "created_day": "2026-10-19",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m27",
+   "pole": "P-09",
+   "kind": "incident",
+   "text": "P-09 USB overcurrent moved payment device port causing payment connection failure on 2026-10-20.",
+   "status": "open",
+   "events": [
+    "e123"
+   ],
+   "first_ts": "2026-10-20 00:30",
+   "last_ts": "2026-10-20 00:30",
+   "created_day": "2026-10-20",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m28",
+   "pole": "P-03",
+   "kind": "incident",
+   "text": "P-03 bay shows frequent false parking sessions with low confidence on 2026-10-20.",
+   "status": "open",
+   "events": [
+    "e128"
+   ],
+   "first_ts": "2026-10-20 14:30",
+   "last_ts": "2026-10-20 14:30",
+   "created_day": "2026-10-20",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m29",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet missed plate updates: 21 poles sent zero plate updates after restart due to delivery code fault on 2026-10-20.",
+   "status": "resolved",
+   "events": [
+    "e127"
+   ],
+   "first_ts": "2026-10-20 13:50",
+   "last_ts": "2026-10-20 13:50",
+   "created_day": "2026-10-20",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": "m33",
+   "history": []
+  },
+  {
+   "id": "m30",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 rebooted on 2026-10-21 running older plate logic without latest rules.",
+   "status": "open",
+   "events": [
+    "e131",
+    "e213"
+   ],
+   "first_ts": "2026-10-21 00:48",
+   "last_ts": "2026-10-21 00:48",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m31",
+   "pole": "P-15",
+   "kind": "incident",
+   "text": "P-15 held for producer review on 2026-10-21 with force exit failing until manual intervention.",
+   "status": "open",
+   "events": [
+    "e133"
+   ],
+   "first_ts": "2026-10-21 07:52",
+   "last_ts": "2026-10-21 07:52",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m32",
+   "pole": "P-38",
+   "kind": "fix",
+   "text": "P-38 producer review holds mitigated by changing worker input queue to drop oldest sample to prevent stalls.",
+   "status": "open",
+   "events": [
+    "e134",
+    "e168"
+   ],
+   "first_ts": "2026-10-21 09:32",
+   "last_ts": "2026-10-22 09:25",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m33",
+   "pole": "fleet",
+   "kind": "fix",
+   "text": "Fleet plate delivery restored on 2026-10-21 by secondary camera fix rollout.",
+   "status": "open",
+   "events": [
+    "e135"
+   ],
+   "first_ts": "2026-10-21 10:33",
+   "last_ts": "2026-10-21 10:33",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m34",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "P-24 payment failed on 2026-10-22 with customer using neighboring bay instead, resolution unconfirmed.",
+   "status": "open",
+   "events": [
+    "e136",
+    "e173"
+   ],
+   "first_ts": "2026-10-21 10:33",
+   "last_ts": "2026-10-22 12:57",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m35",
+   "pole": "P-10",
+   "kind": "incident",
+   "text": "P-10 history delivery stopped on producer fault on 2026-10-21, hold left for manual reconcile.",
+   "status": "open",
+   "events": [
+    "e137"
+   ],
+   "first_ts": "2026-10-21 11:14",
+   "last_ts": "2026-10-21 11:14",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m36",
+   "pole": "P-21",
+   "kind": "incident",
+   "text": "P-21 session ended without plate on 2026-10-21 due to character agreement blank rule.",
+   "status": "open",
+   "events": [
+    "e139"
+   ],
+   "first_ts": "2026-10-21 13:17",
+   "last_ts": "2026-10-21 13:17",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m37",
+   "pole": "P-24",
+   "kind": "incident",
+   "text": "P-24 missed plate on 2026-10-21: early short window found no track, retry blocked.",
+   "status": "open",
+   "events": [
+    "e140"
+   ],
+   "first_ts": "2026-10-21 13:48",
+   "last_ts": "2026-10-21 13:48",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m38",
+   "pole": "P-24",
+   "kind": "incident",
+   "text": "P-24 telemetry gap 18:00-19:00 on 2026-10-21 with stopped reporting for 1 h.",
+   "status": "open",
+   "events": [
+    "e152",
+    "e217"
+   ],
+   "first_ts": "2026-10-21 18:00",
+   "last_ts": "2026-10-26 18:00",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m39",
+   "pole": "P-33",
+   "kind": "incident",
+   "text": "P-33 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "status": "open",
+   "events": [
+    "e158",
+    "e208",
+    "e227",
+    "e250",
+    "e268"
+   ],
+   "first_ts": "2026-10-21 19:00",
+   "last_ts": "2026-11-02 09:00",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": [
+    {
+     "day": "2026-10-24",
+     "old_text": "P-33 telemetry gap started at 19:00 on 2026-10-21 with no data since."
+    },
+    {
+     "day": "2026-10-27",
+     "old_text": "P-33 telemetry gap continues on 2026-10-24 with no data for 3 days."
+    },
+    {
+     "day": "2026-10-30",
+     "old_text": "P-33 telemetry gap continues on 2026-10-27 with no data for 6 days."
+    }
+   ]
+  },
+  {
+   "id": "m40",
+   "pole": "P-34",
+   "kind": "incident",
+   "text": "P-34 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "status": "open",
+   "events": [
+    "e159",
+    "e209",
+    "e228",
+    "e251",
+    "e269"
+   ],
+   "first_ts": "2026-10-21 19:00",
+   "last_ts": "2026-11-02 09:00",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": [
+    {
+     "day": "2026-10-27",
+     "old_text": "P-34 telemetry gap started at 19:00 on 2026-10-21 with no data since."
+    },
+    {
+     "day": "2026-10-30",
+     "old_text": "P-34 telemetry gap continues on 2026-10-27 with no data for 6 days."
+    }
+   ]
+  },
+  {
+   "id": "m41",
+   "pole": "P-35",
+   "kind": "incident",
+   "text": "P-35 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "status": "open",
+   "events": [
+    "e160",
+    "e210",
+    "e229",
+    "e252",
+    "e270"
+   ],
+   "first_ts": "2026-10-21 19:00",
+   "last_ts": "2026-11-02 09:00",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": [
+    {
+     "day": "2026-10-27",
+     "old_text": "P-35 telemetry gap started at 19:00 on 2026-10-21 with no data since."
+    },
+    {
+     "day": "2026-10-30",
+     "old_text": "P-35 telemetry gap continues on 2026-10-27 with no data for 6 days."
+    }
+   ]
+  },
+  {
+   "id": "m42",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet removal work on 2026-10-21 powered down nine bays and removed three bays unreachable during construction.",
+   "status": "open",
+   "events": [
+    "e154",
+    "e155",
+    "e162",
+    "e211",
+    "e220",
+    "e221"
+   ],
+   "first_ts": "2026-10-21 18:17",
+   "last_ts": "2026-10-21 19:18",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m43",
+   "pole": "P-24",
+   "kind": "incident",
+   "text": "P-24 bay held on 2026-10-22 when restart coincided with departure, departure finished manually after confirming empty.",
+   "status": "open",
+   "events": [
+    "e163",
+    "e165",
+    "e170"
+   ],
+   "first_ts": "2026-10-21 20:16",
+   "last_ts": "2026-10-22 10:00",
+   "created_day": "2026-10-21",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m44",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet engine restart of 36 poles on 2026-10-22 for lightened photo selection passed marker, start time, flag and history checks.",
+   "status": "open",
+   "events": [
+    "e169"
+   ],
+   "first_ts": "2026-10-22 09:58",
+   "last_ts": "2026-10-22 09:58",
+   "created_day": "2026-10-22",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m45",
+   "pole": "P-12",
+   "kind": "incident",
+   "text": "P-12 upload failed once over secure shell on 2026-10-22 and retry succeeded.",
+   "status": "open",
+   "events": [
+    "e171"
+   ],
+   "first_ts": "2026-10-22 10:30",
+   "last_ts": "2026-10-22 10:30",
+   "created_day": "2026-10-22",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m46",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "P-26 terminal network fault fixed on-site by engineer on 2026-10-22.",
+   "status": "open",
+   "events": [
+    "e172"
+   ],
+   "first_ts": "2026-10-22 12:00",
+   "last_ts": "2026-10-22 12:00",
+   "created_day": "2026-10-22",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m47",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "P-26 payment controller rebooted on 2026-10-22 after day-long internet outage and payment test passed.",
+   "status": "open",
+   "events": [
+    "e174"
+   ],
+   "first_ts": "2026-10-22 15:54",
+   "last_ts": "2026-10-22 15:54",
+   "created_day": "2026-10-22",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m48",
+   "pole": "P-39",
+   "kind": "incident",
+   "text": "P-39 engine restarted manually on 2026-10-23 before empty rebaseline and empty rebaseline held empty 30 minutes hiding arrival then released at 15:52",
+   "status": "open",
+   "events": [
+    "e183",
+    "e189",
+    "e190"
+   ],
+   "first_ts": "2026-10-23 14:18",
+   "last_ts": "2026-10-23 15:31",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m49",
+   "pole": "P-39",
+   "kind": "incident",
+   "text": "P-39 missed plate on 2026-10-23 due to parking judgement flicker causing confirmed plate to drop and second session ending without vote on single camera.",
+   "status": "open",
+   "events": [
+    "e180"
+   ],
+   "first_ts": "2026-10-23 13:39",
+   "last_ts": "2026-10-23 13:39",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m50",
+   "pole": "P-31",
+   "kind": "incident",
+   "text": "P-31 entry session assigned neighboring bay number by front camera on 2026-10-23 and wrong bay attached session requested for correction.",
+   "status": "open",
+   "events": [
+    "e181",
+    "e182"
+   ],
+   "first_ts": "2026-10-23 14:10",
+   "last_ts": "2026-10-23 14:10",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m51",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet firmware auto resume after stable empty deployed to operating bays on 2026-10-23 with unknown exit times split as review required.",
+   "status": "open",
+   "events": [
+    "e177"
+   ],
+   "first_ts": "2026-10-23 10:43",
+   "last_ts": "2026-10-23 10:43",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m52",
+   "pole": "fleet",
+   "kind": "fix",
+   "text": "Retry and carry over fix forced to remaining bays on 2026-10-23 with three done at first check and no failures.",
+   "status": "open",
+   "events": [
+    "e184"
+   ],
+   "first_ts": "2026-10-23 14:19",
+   "last_ts": "2026-10-23 14:19",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m53",
+   "pole": "P-08",
+   "kind": "incident",
+   "text": "P-08 secure shell upload failed during rollout on 2026-10-23 with two bays remaining",
+   "status": "open",
+   "events": [
+    "e187"
+   ],
+   "first_ts": "2026-10-23 15:14",
+   "last_ts": "2026-10-23 15:14",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m54",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet OCR v1.4 plus track fragment merge patch rolled out on 2026-10-23 with engines restarted for deployment round.",
+   "status": "open",
+   "events": [
+    "e196",
+    "e197"
+   ],
+   "first_ts": "2026-10-23 18:05",
+   "last_ts": "2026-10-23 18:05",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m55",
+   "pole": "P-32",
+   "kind": "incident",
+   "text": "P-32: network - External access port blocked reached via neighboring bay",
+   "status": "open",
+   "events": [
+    "e194"
+   ],
+   "first_ts": "2026-10-23 16:00",
+   "last_ts": "2026-10-23 16:00",
+   "created_day": "2026-10-23",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m56",
+   "pole": "P-39",
+   "kind": "incident",
+   "text": "P-39 false occupancy at dawn on 2026-10-24 creating multiple sessions with hold not cleared due to night model score staying mid range.",
+   "status": "open",
+   "events": [
+    "e203",
+    "e199"
+   ],
+   "first_ts": "2026-10-24 04:00",
+   "last_ts": "2026-10-24 04:00",
+   "created_day": "2026-10-24",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m57",
+   "pole": "P-38",
+   "kind": "incident",
+   "text": "P-38 false occupancy on 2026-10-24 read empty bay as occupied creating four hour session ended 09:34.",
+   "status": "open",
+   "events": [
+    "e207"
+   ],
+   "first_ts": "2026-10-24 05:11",
+   "last_ts": "2026-10-24 05:11",
+   "created_day": "2026-10-24",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m58",
+   "pole": "P-11",
+   "kind": "incident",
+   "text": "P-11 external port closed on 2026-10-24 accessed via neighboring bay LAN.",
+   "status": "open",
+   "events": [
+    "e205"
+   ],
+   "first_ts": "2026-10-24 04:19",
+   "last_ts": "2026-10-24 04:19",
+   "created_day": "2026-10-24",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m59",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet OCR v1.5 rollout completed on 2026-10-24 on all 36 bays with two bays initially held.",
+   "status": "open",
+   "events": [
+    "e200",
+    "e206",
+    "e204"
+   ],
+   "first_ts": "2026-10-24 04:20",
+   "last_ts": "2026-10-24 04:20",
+   "created_day": "2026-10-24",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m60",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet control server communication outage on 2026-10-26 blocked payments for 22 minutes starting at 17:18.",
+   "status": "open",
+   "events": [
+    "e214"
+   ],
+   "first_ts": "2026-10-26 17:18",
+   "last_ts": "2026-10-26 17:18",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m61",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet power loss on 2026-10-26 affected nine bays starting at 18:27 with power restored at 19:23.",
+   "status": "open",
+   "events": [
+    "e220"
+   ],
+   "first_ts": "2026-10-26 18:27",
+   "last_ts": "2026-10-26 18:27",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m62",
+   "pole": "P-15",
+   "kind": "incident",
+   "text": "P-15 network USB link write error logged on 2026-10-26 at 22:43 with terminal reconnected afterwards.",
+   "status": "open",
+   "events": [
+    "e222"
+   ],
+   "first_ts": "2026-10-26 22:43",
+   "last_ts": "2026-10-26 22:43",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m63",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 missed plate on 2026-10-26 at 09:59 with retry read passing car plate instead of bay vehicle corrected by operator.",
+   "status": "open",
+   "events": [
+    "e213"
+   ],
+   "first_ts": "2026-10-26 09:59",
+   "last_ts": "2026-10-26 09:59",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m64",
+   "pole": "P-27",
+   "kind": "incident",
+   "text": "P-27 payment button failed on 2026-10-26 at 17:27 staying booked as equipment error charge.",
+   "status": "open",
+   "events": [
+    "e215"
+   ],
+   "first_ts": "2026-10-26 17:27",
+   "last_ts": "2026-10-26 17:27",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m65",
+   "pole": "P-38",
+   "kind": "incident",
+   "text": "P-38 billing failures on 2026-10-26 including card terminal rejection at 17:46 and evening payment failure at 18:22 recovered next morning.",
+   "status": "open",
+   "events": [
+    "e216",
+    "e219"
+   ],
+   "first_ts": "2026-10-26 18:22",
+   "last_ts": "2026-10-26 18:22",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m66",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet far plate block plus dwell reader rollout started on 2026-10-26 at 18:10.",
+   "status": "open",
+   "events": [
+    "e218"
+   ],
+   "first_ts": "2026-10-26 18:10",
+   "last_ts": "2026-10-26 18:10",
+   "created_day": "2026-10-26",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m67",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet overnight power loss on 2026-10-27 affected three bays with later approvals returning normal.",
+   "status": "open",
+   "events": [
+    "e224"
+   ],
+   "first_ts": "2026-10-27 02:00",
+   "last_ts": "2026-10-27 02:00",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m68",
+   "pole": "P-05",
+   "kind": "incident",
+   "text": "P-05 bay returned busy on context query on 2026-10-27 with history link normal.",
+   "status": "open",
+   "events": [
+    "e225"
+   ],
+   "first_ts": "2026-10-27 06:33",
+   "last_ts": "2026-10-27 06:33",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m69",
+   "pole": "P-24",
+   "kind": "incident",
+   "text": "P-24 bay returned busy on context query on 2026-10-27 with history link normal.",
+   "status": "open",
+   "events": [
+    "e226"
+   ],
+   "first_ts": "2026-10-27 06:33",
+   "last_ts": "2026-10-27 06:33",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m70",
+   "pole": "P-26",
+   "kind": "incident",
+   "text": "P-26 had seven quick low-amount billing failures on 2026-10-27 before approvals returned normal.",
+   "status": "open",
+   "events": [
+    "e230"
+   ],
+   "first_ts": "2026-10-27 10:02",
+   "last_ts": "2026-10-27 10:02",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m71",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet pole disk usage observed at 84 percent on 2026-10-27 during review.",
+   "status": "open",
+   "events": [
+    "e231"
+   ],
+   "first_ts": "2026-10-27 14:12",
+   "last_ts": "2026-10-27 14:12",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m72",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "P-20 separate-process reader canary applied on 2026-10-27 and rolled back after 62-second read hit job limit.",
+   "status": "open",
+   "events": [
+    "e232",
+    "e233",
+    "e235",
+    "e236"
+   ],
+   "first_ts": "2026-10-27 18:27",
+   "last_ts": "2026-10-27 20:15",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m73",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "P-20 engine restarted on old version with car present due to tool error on 2026-10-27.",
+   "status": "open",
+   "events": [
+    "e234"
+   ],
+   "first_ts": "2026-10-27 18:32",
+   "last_ts": "2026-10-27 18:32",
+   "created_day": "2026-10-27",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m74",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "P-20 engine restarted on 2026-10-29 with exit reader enabled in store-only mode.",
+   "status": "open",
+   "events": [
+    "e244"
+   ],
+   "first_ts": "2026-10-29 18:05",
+   "last_ts": "2026-10-29 18:05",
+   "created_day": "2026-10-29",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m75",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "P-20 had four plateless ended sessions on 2026-10-29 with two identified and two unreadable.",
+   "status": "open",
+   "events": [
+    "e245",
+    "e264"
+   ],
+   "first_ts": "2026-10-29 20:00",
+   "last_ts": "2026-10-31 07:30",
+   "created_day": "2026-10-29",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m76",
+   "pole": "P-20",
+   "kind": "incident",
+   "text": "P-20 engine restarted on 2026-10-30 to enable shadow selector logging mode.",
+   "status": "open",
+   "events": [
+    "e247"
+   ],
+   "first_ts": "2026-10-30 01:58",
+   "last_ts": "2026-10-30 01:58",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m77",
+   "pole": "P-04",
+   "kind": "incident",
+   "text": "P-04 engine restarted on 2026-10-30 once for late-report test preparation.",
+   "status": "open",
+   "events": [
+    "e254"
+   ],
+   "first_ts": "2026-10-30 11:12",
+   "last_ts": "2026-10-30 11:12",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m78",
+   "pole": "P-04",
+   "kind": "incident",
+   "text": "P-04 firmware reconnection hold active on 2026-10-30 with no open session.",
+   "status": "open",
+   "events": [
+    "e253"
+   ],
+   "first_ts": "2026-10-30 11:11",
+   "last_ts": "2026-10-30 11:11",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m79",
+   "pole": "P-04",
+   "kind": "incident",
+   "text": "P-04 first single-test run on 2026-10-30 ended unreadable with no exit plate movement.",
+   "status": "open",
+   "events": [
+    "e255"
+   ],
+   "first_ts": "2026-10-30 11:41",
+   "last_ts": "2026-10-30 11:41",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m80",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet firmware with late-report support deployed to 36 bays on 2026-10-30.",
+   "status": "open",
+   "events": [
+    "e256"
+   ],
+   "first_ts": "2026-10-30 12:24",
+   "last_ts": "2026-10-30 12:24",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m81",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Server video volume at 62 percent after cleanup on 2026-10-30 with daily growth 0.7TB.",
+   "status": "superseded",
+   "events": [
+    "e248"
+   ],
+   "first_ts": "2026-10-30 08:30",
+   "last_ts": "2026-10-30 08:30",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": "m89",
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m82",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Training server at 93 percent full with 34GB free on 2026-10-30.",
+   "status": "open",
+   "events": [
+    "e249"
+   ],
+   "first_ts": "2026-10-30 08:31",
+   "last_ts": "2026-10-30 08:31",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m83",
+   "pole": "P-28",
+   "kind": "incident",
+   "text": "P-28 false occupancy on 2026-10-30 flagged new parking needs-review from prior session dwell state.",
+   "status": "open",
+   "events": [
+    "e258"
+   ],
+   "first_ts": "2026-10-30 15:37",
+   "last_ts": "2026-10-30 15:37",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m84",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Fleet exit reader and selector logging enabled on 35 bays on 2026-10-30.",
+   "status": "open",
+   "events": [
+    "e259"
+   ],
+   "first_ts": "2026-10-30 18:30",
+   "last_ts": "2026-10-30 18:30",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m85",
+   "pole": "P-25",
+   "kind": "incident",
+   "text": "P-25 offline on 2026-10-30 without firmware session for two hours with fare not counted.",
+   "status": "open",
+   "events": [
+    "e260"
+   ],
+   "first_ts": "2026-10-30 19:32",
+   "last_ts": "2026-10-30 19:32",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m86",
+   "pole": "P-38",
+   "kind": "incident",
+   "text": "P-38 missed plate on 2026-10-30 with short 8-second session filled with neighboring bay number.",
+   "status": "open",
+   "events": [
+    "e261"
+   ],
+   "first_ts": "2026-10-30 22:00",
+   "last_ts": "2026-10-30 22:00",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m87",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet five bays unreachable on 2026-10-30 during overnight log aggregation.",
+   "status": "open",
+   "events": [
+    "e262"
+   ],
+   "first_ts": "2026-10-30 23:47",
+   "last_ts": "2026-10-30 23:47",
+   "created_day": "2026-10-30",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m88",
+   "pole": "P-31",
+   "kind": "incident",
+   "text": "P-31 stuck showing recognizing for one hour with empty identity despite engine identification on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e267"
+   ],
+   "first_ts": "2026-11-02 09:00",
+   "last_ts": "2026-11-02 09:00",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m89",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Server video volume approaching full within about four days with high daily growth on 2026-11-02.",
+   "status": "superseded",
+   "events": [
+    "e248",
+    "e271"
+   ],
+   "first_ts": "2026-10-30 08:30",
+   "last_ts": "2026-11-02 09:30",
+   "created_day": "2026-11-02",
+   "supersedes": "m81",
+   "superseded_by": "m110",
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m90",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Protected video hold links installed with twice daily refresh on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e272"
+   ],
+   "first_ts": "2026-11-02 09:30",
+   "last_ts": "2026-11-02 09:30",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m91",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Four bays on history hold with zero overnight sessions suggesting possible missed billing on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e275"
+   ],
+   "first_ts": "2026-11-02 10:10",
+   "last_ts": "2026-11-02 10:10",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m92",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 engine restarted to common set on 2026-11-02 with health showing occupied without errors.",
+   "status": "open",
+   "events": [
+    "e273"
+   ],
+   "first_ts": "2026-11-02 09:47",
+   "last_ts": "2026-11-02 09:47",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m93",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Fleet exit read failures caused five paid sessions without plate on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e277"
+   ],
+   "first_ts": "2026-11-02 12:35",
+   "last_ts": "2026-11-02 12:35",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m94",
+   "pole": "fleet",
+   "kind": "pattern",
+   "text": "Ninety paid sessions without plate occurred on 2026-11-02 with video kept for 59 and missing for 31.",
+   "status": "open",
+   "events": [
+    "e282"
+   ],
+   "first_ts": "2026-11-02 14:50",
+   "last_ts": "2026-11-02 14:50",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m95",
+   "pole": "fleet",
+   "kind": "incident",
+   "text": "Group B router ports refused connections for two minutes then recovered on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e281"
+   ],
+   "first_ts": "2026-11-02 13:48",
+   "last_ts": "2026-11-02 13:48",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m96",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Server automatic video deletion paused with stop file on 2026-11-02 while hold refresh continues.",
+   "status": "open",
+   "events": [
+    "e283"
+   ],
+   "first_ts": "2026-11-02 15:10",
+   "last_ts": "2026-11-02 15:10",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m97",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Read-only pole access installed on 36 poles with frequent server polling on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e284"
+   ],
+   "first_ts": "2026-11-02 16:05",
+   "last_ts": "2026-11-02 16:05",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m98",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Engine patch rollout started with pilot bay then sequential remaining poles on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e278"
+   ],
+   "first_ts": "2026-11-02 12:38",
+   "last_ts": "2026-11-02 12:38",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m99",
+   "pole": "P-04",
+   "kind": "belief",
+   "text": "Plate fill firmware deployed to P-04 as pilot pole on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e285"
+   ],
+   "first_ts": "2026-11-02 16:11",
+   "last_ts": "2026-11-02 16:11",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m100",
+   "pole": "P-04",
+   "kind": "belief",
+   "text": "Late fill switch turned on for P-04 without restart, service active and healthy on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e286"
+   ],
+   "first_ts": "2026-11-02 16:58",
+   "last_ts": "2026-11-02 16:58",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m101",
+   "pole": "P-18",
+   "kind": "incident",
+   "text": "P-18 occupied re-link refused busy and was held for unverified connection continuity on 2026-11-02, retry succeeded.",
+   "status": "open",
+   "events": [
+    "e279"
+   ],
+   "first_ts": "2026-11-02 13:37",
+   "last_ts": "2026-11-02 13:37",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m102",
+   "pole": "P-19",
+   "kind": "incident",
+   "text": "P-19 empty re-link refused context not empty and was held for unverified connection on 2026-11-02, history connection read normal.",
+   "status": "open",
+   "events": [
+    "e280"
+   ],
+   "first_ts": "2026-11-02 13:37",
+   "last_ts": "2026-11-02 13:37",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m103",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Server labeler rebuilt from release source with two fixes and is live and monitored on 2026-11-02.",
+   "status": "open",
+   "events": [
+    "e287"
+   ],
+   "first_ts": "2026-11-02 21:18",
+   "last_ts": "2026-11-02 21:18",
+   "created_day": "2026-11-02",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m104",
+   "pole": "P-19",
+   "kind": "incident",
+   "text": "P-19 rebooted with truncated video files around reboot time on 2026-11-03.",
+   "status": "open",
+   "events": [
+    "e292"
+   ],
+   "first_ts": "2026-11-03 16:52",
+   "last_ts": "2026-11-03 16:52",
+   "created_day": "2026-11-03",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m105",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Plate photo fill firmware deployed to 36 poles with successful transmissions on 2026-11-03.",
+   "status": "open",
+   "events": [
+    "e289"
+   ],
+   "first_ts": "2026-11-03 16:15",
+   "last_ts": "2026-11-03 16:15",
+   "created_day": "2026-11-03",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m106",
+   "pole": "fleet",
+   "kind": "belief",
+   "text": "Late fill switch enabled on all 36 poles after turning on remaining 35 poles on 2026-11-03.",
+   "status": "open",
+   "events": [
+    "e290"
+   ],
+   "first_ts": "2026-11-03 16:32",
+   "last_ts": "2026-11-03 16:32",
+   "created_day": "2026-11-03",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m107",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Labeler version 0.1.22 released and deployed with log handling fixes on 2026-11-03.",
+   "status": "open",
+   "events": [
+    "e291"
+   ],
+   "first_ts": "2026-11-03 16:43",
+   "last_ts": "2026-11-03 16:43",
+   "created_day": "2026-11-03",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m108",
+   "pole": "P-23",
+   "kind": "incident",
+   "text": "P-23 rebooted at 01:02 on 2026-11-04 with uptime reset and engine auto-recovery.",
+   "status": "open",
+   "events": [
+    "e294"
+   ],
+   "first_ts": "2026-11-04 01:02",
+   "last_ts": "2026-11-04 01:02",
+   "created_day": "2026-11-04",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m109",
+   "pole": "server",
+   "kind": "incident",
+   "text": "Server labeler registration lag peaked at 9.1 hours on 2026-11-04 with file read failures and intake slower than inflow under high load.",
+   "status": "open",
+   "events": [
+    "e295",
+    "e296",
+    "e299"
+   ],
+   "first_ts": "2026-11-04 14:00",
+   "last_ts": "2026-11-04 14:00",
+   "created_day": "2026-11-04",
+   "supersedes": null,
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  },
+  {
+   "id": "m110",
+   "pole": "server",
+   "kind": "belief",
+   "text": "Server video disk at 72 percent after duplicate log cleanup removed about 1.27 terabytes on 2026-11-04.",
+   "status": "open",
+   "events": [
+    "e248",
+    "e271",
+    "e301"
+   ],
+   "first_ts": "2026-10-30 08:30",
+   "last_ts": "2026-11-04 14:30",
+   "created_day": "2026-11-04",
+   "supersedes": "m89",
+   "superseded_by": null,
+   "resolved_by": null,
+   "history": []
+  }
+ ],
+ "log": [
+  {
+   "day": "2026-10-24",
+   "op": "link",
+   "id": "m39",
+   "pole": "P-33",
+   "events": [],
+   "text": "P-33 telemetry gap continues on 2026-10-24 with no data for 3 days.",
+   "why": "Telemetry gap continues for P-33, same ongoing problem as previously recorded."
+  },
+  {
+   "day": "2026-10-24",
+   "op": "remember",
+   "id": "m56",
+   "pole": "P-39",
+   "text": "P-39 false occupancy at dawn on 2026-10-24 creating multiple sessions with hold not cleared due to night model score staying mid range.",
+   "events": [
+    "e203",
+    "e199"
+   ],
+   "why": "P-39 shows dawn false occupancy with hold not cleared due to night model score, new pattern distinct from previous engine restart and missed plate."
+  },
+  {
+   "day": "2026-10-24",
+   "op": "remember",
+   "id": "m57",
+   "pole": "P-38",
+   "text": "P-38 false occupancy on 2026-10-24 read empty bay as occupied creating four hour session ended 09:34.",
+   "events": [
+    "e207"
+   ],
+   "why": "P-38 false occupancy creates long session, device-health event with no existing open memory for this pole."
+  },
+  {
+   "day": "2026-10-24",
+   "op": "remember",
+   "id": "m58",
+   "pole": "P-11",
+   "text": "P-11 external port closed on 2026-10-24 accessed via neighboring bay LAN.",
+   "events": [
+    "e205"
+   ],
+   "why": "Network event for P-11 with no prior open memory, device-health must be tracked."
+  },
+  {
+   "day": "2026-10-24",
+   "op": "remember",
+   "id": "m59",
+   "pole": "fleet",
+   "text": "Fleet OCR v1.5 rollout completed on 2026-10-24 on all 36 bays with two bays initially held.",
+   "events": [
+    "e200",
+    "e206",
+    "e204"
+   ],
+   "why": "Fleet OCR v1.5 rollout started and completed on 2026-10-24, new fleet-wide change superseding previous version."
+  },
+  {
+   "day": "2026-10-24",
+   "op": "link",
+   "id": "m40",
+   "pole": "P-34",
+   "events": [],
+   "text": "P-34 telemetry gap started at 19:00 on 2026-10-21 with no data since.",
+   "why": "auto: device-health event on a pole with an open problem"
+  },
+  {
+   "day": "2026-10-24",
+   "op": "link",
+   "id": "m41",
+   "pole": "P-35",
+   "events": [],
+   "text": "P-35 telemetry gap started at 19:00 on 2026-10-21 with no data since.",
+   "why": "auto: device-health event on a pole with an open problem"
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m60",
+   "pole": "fleet",
+   "text": "Fleet control server communication outage on 2026-10-26 blocked payments for 22 minutes starting at 17:18.",
+   "events": [
+    "e214"
+   ],
+   "why": "Fleet network outage blocking payments for 22 minutes is a new device-health network incident with no open memory covering it."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "link",
+   "id": "m38",
+   "pole": "P-24",
+   "events": [],
+   "text": "P-24 telemetry gap 18:00-19:00 on 2026-10-21 with stopped reporting for 1 h.",
+   "why": "Telemetry gap on P-24 for 18:00-19:00 is same pole and same kind as open telemetry gap memory m38."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m61",
+   "pole": "fleet",
+   "text": "Fleet power loss on 2026-10-26 affected nine bays starting at 18:27 with power restored at 19:23.",
+   "events": [
+    "e220"
+   ],
+   "why": "Fleet power loss affecting nine bays for about one hour is a new device-health power incident with no open memory covering it."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m62",
+   "pole": "P-15",
+   "text": "P-15 network USB link write error logged on 2026-10-26 at 22:43 with terminal reconnected afterwards.",
+   "events": [
+    "e222"
+   ],
+   "why": "P-15 network USB link write error is a new device-health network event for this pole with no open memory covering network issues."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m63",
+   "pole": "P-23",
+   "text": "P-23 missed plate on 2026-10-26 at 09:59 with retry read passing car plate instead of bay vehicle corrected by operator.",
+   "events": [
+    "e213"
+   ],
+   "why": "P-23 missed plate retry correction is a new plate-reading incident for this pole not covered by existing open memories."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m64",
+   "pole": "P-27",
+   "text": "P-27 payment button failed on 2026-10-26 at 17:27 staying booked as equipment error charge.",
+   "events": [
+    "e215"
+   ],
+   "why": "P-27 payment button failure is a new billing incident for this pole with no open memory."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m65",
+   "pole": "P-38",
+   "text": "P-38 billing failures on 2026-10-26 including card terminal rejection at 17:46 and evening payment failure at 18:22 recovered next morning.",
+   "events": [
+    "e216",
+    "e219"
+   ],
+   "why": "P-38 has two billing failures on 2026-10-26 with card terminal rejection and evening payment failure, a new problem for this pole."
+  },
+  {
+   "day": "2026-10-26",
+   "op": "remember",
+   "id": "m66",
+   "pole": "fleet",
+   "text": "Fleet far plate block plus dwell reader rollout started on 2026-10-26 at 18:10.",
+   "events": [
+    "e218"
+   ],
+   "why": "New fleet deployment started today is a new belief about fleet rollout."
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m67",
+   "pole": "fleet",
+   "text": "Fleet overnight power loss on 2026-10-27 affected three bays with later approvals returning normal.",
+   "events": [
+    "e224"
+   ],
+   "why": "New overnight fleet power loss affecting three bays not covered by existing memory"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m68",
+   "pole": "P-05",
+   "text": "P-05 bay returned busy on context query on 2026-10-27 with history link normal.",
+   "events": [
+    "e225"
+   ],
+   "why": "P-05 hold busy on context query with no prior open memory for this pole"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m69",
+   "pole": "P-24",
+   "text": "P-24 bay returned busy on context query on 2026-10-27 with history link normal.",
+   "events": [
+    "e226"
+   ],
+   "why": "P-24 hold busy on context query is a new occurrence not matching existing hold memory details"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "link",
+   "id": "m39",
+   "pole": "P-33",
+   "events": [
+    "e227"
+   ],
+   "text": "P-33 telemetry gap continues on 2026-10-27 with no data for 6 days.",
+   "why": "Telemetry gap continues for P-33, matches open memory m39"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "link",
+   "id": "m40",
+   "pole": "P-34",
+   "events": [
+    "e228"
+   ],
+   "text": "P-34 telemetry gap continues on 2026-10-27 with no data for 6 days.",
+   "why": "Telemetry gap continues for P-34, matches open memory m40"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "link",
+   "id": "m41",
+   "pole": "P-35",
+   "events": [
+    "e229"
+   ],
+   "text": "P-35 telemetry gap continues on 2026-10-27 with no data for 6 days.",
+   "why": "Telemetry gap continues for P-35, matches open memory m41"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m70",
+   "pole": "P-26",
+   "text": "P-26 had seven quick low-amount billing failures on 2026-10-27 before approvals returned normal.",
+   "events": [
+    "e230"
+   ],
+   "why": "P-26 billing case with quick low-amount failures is new problem not covered by existing reboot/network memories"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m71",
+   "pole": "fleet",
+   "text": "Fleet pole disk usage observed at 84 percent on 2026-10-27 during review.",
+   "events": [
+    "e231"
+   ],
+   "why": "Fleet disk usage observation is new fleet belief worth tracking"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m72",
+   "pole": "P-20",
+   "text": "P-20 separate-process reader canary applied on 2026-10-27 and rolled back after 62-second read hit job limit.",
+   "events": [
+    "e232",
+    "e233",
+    "e235",
+    "e236"
+   ],
+   "why": "P-20 separate-process reader canary applied and then rolled back due to job limit is a new deployment incident"
+  },
+  {
+   "day": "2026-10-27",
+   "op": "link",
+   "id": "m72",
+   "pole": "P-20",
+   "events": [
+    "e235",
+    "e236"
+   ],
+   "text": "P-20 separate-process reader canary applied on 2026-10-27 and rolled back after 62-second read hit job limit.",
+   "why": "Second canary deployment and subsequent rollback are further occurrences of the P-20 separate-process reader canary issue tracked in m72."
+  },
+  {
+   "day": "2026-10-27",
+   "op": "remember",
+   "id": "m73",
+   "pole": "P-20",
+   "text": "P-20 engine restarted on old version with car present due to tool error on 2026-10-27.",
+   "events": [
+    "e234"
+   ],
+   "why": "Device-health engine restart on P-20 with car present by tool error is a new problem not covered by existing open memories."
+  },
+  {
+   "day": "2026-10-29",
+   "op": "remember",
+   "id": "m74",
+   "pole": "P-20",
+   "text": "P-20 engine restarted on 2026-10-29 with exit reader enabled in store-only mode.",
+   "events": [
+    "e244"
+   ],
+   "why": "Engine restart is a device-health event on P-20 with no existing open memory covering this restart, so it needs a new incident record."
+  },
+  {
+   "day": "2026-10-29",
+   "op": "remember",
+   "id": "m75",
+   "pole": "P-20",
+   "text": "P-20 had four plateless ended sessions on 2026-10-29 with two identified and two unreadable.",
+   "events": [
+    "e245",
+    "e264"
+   ],
+   "why": "Missed plate sessions are a device-health related problem on P-20 and there is no open memory covering plateless ended sessions for this pole."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "link",
+   "id": "m39",
+   "pole": "P-33",
+   "events": [
+    "e250"
+   ],
+   "text": "P-33 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "Telemetry gap for P-33 persists, same ongoing problem as open memory m39."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "link",
+   "id": "m40",
+   "pole": "P-34",
+   "events": [
+    "e251"
+   ],
+   "text": "P-34 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "Telemetry gap for P-34 persists, same ongoing problem as open memory m40."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "link",
+   "id": "m41",
+   "pole": "P-35",
+   "events": [
+    "e252"
+   ],
+   "text": "P-35 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "Telemetry gap for P-35 persists, same ongoing problem as open memory m41."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m76",
+   "pole": "P-20",
+   "text": "P-20 engine restarted on 2026-10-30 to enable shadow selector logging mode.",
+   "events": [
+    "e247"
+   ],
+   "why": "Engine restart on P-20 is a new device-health event with no existing open memory covering shadow selector logging mode."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m77",
+   "pole": "P-04",
+   "text": "P-04 engine restarted on 2026-10-30 once for late-report test preparation.",
+   "events": [
+    "e254"
+   ],
+   "why": "Engine restart on P-04 for late-report test preparation is a new device-health event with no existing open memory."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m78",
+   "pole": "P-04",
+   "text": "P-04 firmware reconnection hold active on 2026-10-30 with no open session.",
+   "events": [
+    "e253"
+   ],
+   "why": "Firmware reconnection hold on P-04 is a new device-health issue with no existing open memory."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m79",
+   "pole": "P-04",
+   "text": "P-04 first single-test run on 2026-10-30 ended unreadable with no exit plate movement.",
+   "events": [
+    "e255"
+   ],
+   "why": "Missed plate on P-04 during first single-test run is a new problem worth tracking."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m80",
+   "pole": "fleet",
+   "text": "Fleet firmware with late-report support deployed to 36 bays on 2026-10-30.",
+   "events": [
+    "e256"
+   ],
+   "why": "Fleet-wide firmware deployment is a new belief about fleet capability."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m81",
+   "pole": "server",
+   "text": "Server video volume at 62 percent after cleanup on 2026-10-30 with daily growth 0.7TB.",
+   "events": [
+    "e248"
+   ],
+   "why": "Server disk usage changed after cleanup, new fact for tracking."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m82",
+   "pole": "server",
+   "text": "Training server at 93 percent full with 34GB free on 2026-10-30.",
+   "events": [
+    "e249"
+   ],
+   "why": "Training server disk is critically full, new fact for tracking."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m83",
+   "pole": "P-28",
+   "text": "P-28 false occupancy on 2026-10-30 flagged new parking needs-review from prior session dwell state.",
+   "events": [
+    "e258"
+   ],
+   "why": "P-28 false occupancy is a new device-health problem with no open memory to link to."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m84",
+   "pole": "fleet",
+   "text": "Fleet exit reader and selector logging enabled on 35 bays on 2026-10-30.",
+   "events": [
+    "e259"
+   ],
+   "why": "Exit reader and selector logging enablement is a new fleet configuration change worth tracking."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m85",
+   "pole": "P-25",
+   "text": "P-25 offline on 2026-10-30 without firmware session for two hours with fare not counted.",
+   "events": [
+    "e260"
+   ],
+   "why": "P-25 offline for two hours with fare not counted is a new device-health issue with no open memory."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m86",
+   "pole": "P-38",
+   "text": "P-38 missed plate on 2026-10-30 with short 8-second session filled with neighboring bay number.",
+   "events": [
+    "e261"
+   ],
+   "why": "P-38 missed plate with neighboring bay number is a new plate reading problem not covered by existing open memories."
+  },
+  {
+   "day": "2026-10-30",
+   "op": "remember",
+   "id": "m87",
+   "pole": "fleet",
+   "text": "Fleet five bays unreachable on 2026-10-30 during overnight log aggregation.",
+   "events": [
+    "e262"
+   ],
+   "why": "Five bays unreachable during overnight log aggregation is a new fleet offline event with no matching open memory."
+  },
+  {
+   "day": "2026-10-31",
+   "op": "link",
+   "id": "m75",
+   "pole": "P-20",
+   "events": [
+    "e264"
+   ],
+   "text": "P-20 had four plateless ended sessions on 2026-10-29 with two identified and two unreadable.",
+   "why": "Five overnight exit reads failed with no plate on P-20 is another occurrence of the plateless ended sessions already tracked for this pole."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m88",
+   "pole": "P-31",
+   "text": "P-31 stuck showing recognizing for one hour with empty identity despite engine identification on 2026-11-02.",
+   "events": [
+    "e267"
+   ],
+   "why": "New missed_plate symptom on P-31 not covered by existing open memory m50 about neighboring bay session assignment."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m89",
+   "pole": "server",
+   "text": "Server video volume approaching full within about four days with high daily growth on 2026-11-02.",
+   "events": [
+    "e248",
+    "e271"
+   ],
+   "why": "Video volume condition has changed since 2026-10-30 belief m81; now approaching full within about four days."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "supersede",
+   "id": "m81",
+   "by": "m89",
+   "pole": "server",
+   "why": "Video volume condition has changed since 2026-10-30 belief m81; now approaching full within about four days."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m90",
+   "pole": "server",
+   "text": "Protected video hold links installed with twice daily refresh on 2026-11-02.",
+   "events": [
+    "e272"
+   ],
+   "why": "New configuration change for video retention protection observed today."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m91",
+   "pole": "fleet",
+   "text": "Four bays on history hold with zero overnight sessions suggesting possible missed billing on 2026-11-02.",
+   "events": [
+    "e275"
+   ],
+   "why": "Fleet-wide history hold anomaly suggests possible missed billing, new pattern not previously tracked."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m92",
+   "pole": "P-23",
+   "text": "P-23 engine restarted to common set on 2026-11-02 with health showing occupied without errors.",
+   "events": [
+    "e273"
+   ],
+   "why": "Device-health engine restart on P-23 requires tracking; no existing open memory covers this restart."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m93",
+   "pole": "fleet",
+   "text": "Fleet exit read failures caused five paid sessions without plate on 2026-11-02.",
+   "events": [
+    "e277"
+   ],
+   "why": "New billing loss due to exit read failures not covered by existing memories."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m94",
+   "pole": "fleet",
+   "text": "Ninety paid sessions without plate occurred on 2026-11-02 with video kept for 59 and missing for 31.",
+   "events": [
+    "e282"
+   ],
+   "why": "Larger scale missing plate billing case needs tracking for weeks."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m95",
+   "pole": "fleet",
+   "text": "Group B router ports refused connections for two minutes then recovered on 2026-11-02.",
+   "events": [
+    "e281"
+   ],
+   "why": "Network device-health event must be covered; no existing open memory matches."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m96",
+   "pole": "server",
+   "text": "Server automatic video deletion paused with stop file on 2026-11-02 while hold refresh continues.",
+   "events": [
+    "e283"
+   ],
+   "why": "Server deletion pause is a new operational change related to video volume."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m97",
+   "pole": "fleet",
+   "text": "Read-only pole access installed on 36 poles with frequent server polling on 2026-11-02.",
+   "events": [
+    "e284"
+   ],
+   "why": "New fleet configuration change worth tracking long term."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m98",
+   "pole": "fleet",
+   "text": "Engine patch rollout started with pilot bay then sequential remaining poles on 2026-11-02.",
+   "events": [
+    "e278"
+   ],
+   "why": "Engine patch rollout start is a new fleet change."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m99",
+   "pole": "P-04",
+   "text": "Plate fill firmware deployed to P-04 as pilot pole on 2026-11-02.",
+   "events": [
+    "e285"
+   ],
+   "why": "P-04 pilot firmware deployment is new for this pole."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m100",
+   "pole": "P-04",
+   "text": "Late fill switch turned on for P-04 without restart, service active and healthy on 2026-11-02.",
+   "events": [
+    "e286"
+   ],
+   "why": "Late fill switch activation is a new config state for P-04."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m101",
+   "pole": "P-18",
+   "text": "P-18 occupied re-link refused busy and was held for unverified connection continuity on 2026-11-02, retry succeeded.",
+   "events": [
+    "e279"
+   ],
+   "why": "Hold event on P-18 with retry success is a new pole incident."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m102",
+   "pole": "P-19",
+   "text": "P-19 empty re-link refused context not empty and was held for unverified connection on 2026-11-02, history connection read normal.",
+   "events": [
+    "e280"
+   ],
+   "why": "Hold event on P-19 with normal history read is a new pole incident."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "remember",
+   "id": "m103",
+   "pole": "server",
+   "text": "Server labeler rebuilt from release source with two fixes and is live and monitored on 2026-11-02.",
+   "events": [
+    "e287"
+   ],
+   "why": "Deploy event indicates a new server change worth tracking for weeks."
+  },
+  {
+   "day": "2026-11-02",
+   "op": "link",
+   "id": "m39",
+   "pole": "P-33",
+   "events": [
+    "e268"
+   ],
+   "text": "P-33 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "auto: device-health event on a pole with an open problem"
+  },
+  {
+   "day": "2026-11-02",
+   "op": "link",
+   "id": "m40",
+   "pole": "P-34",
+   "events": [
+    "e269"
+   ],
+   "text": "P-34 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "auto: device-health event on a pole with an open problem"
+  },
+  {
+   "day": "2026-11-02",
+   "op": "link",
+   "id": "m41",
+   "pole": "P-35",
+   "events": [
+    "e270"
+   ],
+   "text": "P-35 telemetry gap continues on 2026-10-30 with no data for 9 days.",
+   "why": "auto: device-health event on a pole with an open problem"
+  },
+  {
+   "day": "2026-11-03",
+   "op": "remember",
+   "id": "m104",
+   "pole": "P-19",
+   "text": "P-19 rebooted with truncated video files around reboot time on 2026-11-03.",
+   "events": [
+    "e292"
+   ],
+   "why": "Device-health reboot on P-19 with truncated video files is a new problem that needs tracking for weeks."
+  },
+  {
+   "day": "2026-11-03",
+   "op": "remember",
+   "id": "m105",
+   "pole": "fleet",
+   "text": "Plate photo fill firmware deployed to 36 poles with successful transmissions on 2026-11-03.",
+   "events": [
+    "e289"
+   ],
+   "why": "Firmware deployment is a fleet-wide change worth tracking for future correlation."
+  },
+  {
+   "day": "2026-11-03",
+   "op": "remember",
+   "id": "m106",
+   "pole": "fleet",
+   "text": "Late fill switch enabled on all 36 poles after turning on remaining 35 poles on 2026-11-03.",
+   "events": [
+    "e290"
+   ],
+   "why": "Configuration change completes late fill enablement fleet-wide."
+  },
+  {
+   "day": "2026-11-03",
+   "op": "remember",
+   "id": "m107",
+   "pole": "server",
+   "text": "Labeler version 0.1.22 released and deployed with log handling fixes on 2026-11-03.",
+   "events": [
+    "e291"
+   ],
+   "why": "New labeler release is a server change worth tracking for future incidents."
+  },
+  {
+   "day": "2026-11-04",
+   "op": "remember",
+   "id": "m108",
+   "pole": "P-23",
+   "text": "P-23 rebooted at 01:02 on 2026-11-04 with uptime reset and engine auto-recovery.",
+   "events": [
+    "e294"
+   ],
+   "why": "Device-health reboot on P-23 must be tracked; no existing open memory covers this reboot."
+  },
+  {
+   "day": "2026-11-04",
+   "op": "remember",
+   "id": "m109",
+   "pole": "server",
+   "text": "Server labeler registration lag peaked at 9.1 hours on 2026-11-04 with file read failures and intake slower than inflow under high load.",
+   "events": [
+    "e295",
+    "e296",
+    "e299"
+   ],
+   "why": "Server labeler registration lag with file read failures and high load is a new server problem needing tracking for weeks."
+  },
+  {
+   "day": "2026-11-04",
+   "op": "remember",
+   "id": "m110",
+   "pole": "server",
+   "text": "Server video disk at 72 percent after duplicate log cleanup removed about 1.27 terabytes on 2026-11-04.",
+   "events": [
+    "e248",
+    "e271",
+    "e301"
+   ],
+   "why": "Disk usage belief is outdated after cleanup removed 1.27 TB; new usage is 72 percent."
+  },
+  {
+   "day": "2026-11-04",
+   "op": "supersede",
+   "id": "m89",
+   "by": "m110",
+   "pole": "server",
+   "why": "Disk usage belief is outdated after cleanup removed 1.27 TB; new usage is 72 percent."
+  }
+ ]
+}

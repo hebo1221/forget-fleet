@@ -1,0 +1,22 @@
+{
+ "rows": [
+  {
+   "q": "How many times has P-23 rebooted since Oct 9, on which dates, and what is the most likely cause?",
+   "memory": {
+    "answer": "P-23 rebooted 3 times since 2026-10-09:\n\n* 2026-10-16 – power reboot, session carried over after reconcile [e73]\n* 2026-10-21 00:48 – rebooted running older plate logic without latest rules [e131]; m30\n* 2026-11-04 01:02 – rebooted with uptime reset and engine auto-recovery [e294]; m108\n\nThe history cites restart-related reporting issues and reboot-related telemetry gaps [m17], and notes power reboot and older plate logic / uptime reset, but does not identify a single most likely cause.",
+    "prompt_tokens": 1487,
+    "latency_s": 53.3
+   },
+   "full_log": {
+    "answer": "P-23 rebooted 3 times in the log:\n\n* 2026-10-16 16:06 – Power reboot, session carried over after reconcile [e73]\n* 2026-10-21 00:48 – Pole rebooted, running older plate logic without latest rules [e131]\n* 2026-11-04 01:02 – Pole rebooted at 01:02 (uptime reset); engine came back on its own [e294]\n\nThe history only explicitly attributes cause to the 16 Oct event as a power reboot. The 21 Oct and 4 Nov reboots are recorded without a stated cause; the log does not provide a most likely cause for those.",
+    "prompt_tokens": 10182,
+    "latency_s": 51.9
+   },
+   "none": {
+    "answer": "The history provided is empty, so there is no information about P-23 reboots since Oct 9, their dates, or causes. I cannot determine the count or most likely cause from the available history.",
+    "prompt_tokens": 121,
+    "latency_s": 12.8
+   }
+  }
+ ]
+}
