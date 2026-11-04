@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>compose</title>
+<style>body{margin:0;background:#000;color:#fff;font:14px sans-serif}canvas{width:960px;height:600px;display:block}</style></head>
+<body>
+<canvas id="c" width="1920" height="1200"></canvas>
+<div id="st">idle</div>
+<script>
+// Renders a list of still frames (with cross-fades and a slow push-in) to a WebM via MediaRecorder.
+const W = 1920, H = 1200, FPS = 30, FADE = 0.45;
+const c = document.getElementById('c'), g = c.getContext('2d');
+function load(src){ return new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = src; }); }
+function draw(img, t, dur, alpha){
+  const z = 1 + 0.025 * (t / dur);            // gentle push-in
+  const w = W * z, h = H * z;
+  g.globalAlpha = alpha;
+  g.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
+  g.globalAlpha = 1;
+}
+window.render = async function(list){
+  const imgs = await Promise.all(list.map(f => load(f.src)));
+  const stream = c.captureStream(FPS);
+  const rec = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp9', videoBitsPerSecond: 8e6 });
+  const chunks = [];
+  rec.ondataavailable = e => e.data.size && chunks.push(e.data);
+  const done = new Promise(r => rec.onstop = r);
+  rec.start(1000);
+  const starts = []; let acc = 0; for (const f of list){ starts.push(acc); acc += f.dur; }
+  const total = acc; const t0 = performance.now();
+  await new Promise(resolve => {
+    function tick(){
+      const t = (performance.now() - t0) / 1000;
+      if (t >= total){ resolve(); return; }
+      let k = starts.findIndex((s, i) => t >= s && t < s + list[i].dur);
+      if (k < 0) k = list.length - 1;
+      const lt = t - starts[k];
+      g.fillStyle = '#0b0d12'; g.fillRect(0, 0, W, H);
+      draw(imgs[k], lt, list[k].dur, 1);
+      const rem = list[k].dur - lt;
+      if (k + 1 < list.length && rem < FADE) draw(imgs[k + 1], 0, list[k + 1].dur, 1 - rem / FADE);
+      if (k === 0 && lt < FADE) { g.fillStyle = `rgba(0,0,0,${1 - lt / FADE})`; g.fillRect(0, 0, W, H); }
+      if (k === list.length - 1 && rem < FADE) { g.fillStyle = `rgba(0,0,0,${1 - rem / FADE})`; g.fillRect(0, 0, W, H); }
+      document.getElementById('st').textContent = `t=${t.toFixed(1)} / ${total.toFixed(1)}`;
+      requestAnimationFrame(tick);
+    }
+    tick();
+  });
+  rec.stop(); await done;
+  const blob = new Blob(chunks, { type: 'video/webm' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = window.__outName || 'forget-muse-spark-demo.webm'; document.body.appendChild(a); a.click();
+  window.__videoSize = blob.size;
+  document.getElementById('st').textContent = 'done ' + blob.size;
+  return blob.size;
+};
+</script></body></html>

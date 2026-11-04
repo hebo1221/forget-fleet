@@ -5,18 +5,446 @@
    "memory": {
     "answer": "P-23 rebooted 3 times since 2026-10-09:\n\n* 2026-10-16 – power reboot, session carried over after reconcile [e73]\n* 2026-10-21 00:48 – rebooted running older plate logic without latest rules [e131]; m30\n* 2026-11-04 01:02 – rebooted with uptime reset and engine auto-recovery [e294]; m108\n\nThe history cites restart-related reporting issues and reboot-related telemetry gaps [m17], and notes power reboot and older plate logic / uptime reset, but does not identify a single most likely cause.",
     "prompt_tokens": 1487,
-    "latency_s": 53.3
+    "latency_s": 53.3,
+    "reason": "Correct count (3) and dates match all explicit P-23 reboot events: e73 (2026-10-16 power reboot), e131 (2026-10-21 older plate logic), e294 (2026-11-04 uptime reset). No other P-23 reboot in log; engine_restart e273 correctly excluded. Cause summary accurate - only e73 states power, others give no cause, so no single cause.",
+    "score": 2
    },
    "full_log": {
     "answer": "P-23 rebooted 3 times in the log:\n\n* 2026-10-16 16:06 – Power reboot, session carried over after reconcile [e73]\n* 2026-10-21 00:48 – Pole rebooted, running older plate logic without latest rules [e131]\n* 2026-11-04 01:02 – Pole rebooted at 01:02 (uptime reset); engine came back on its own [e294]\n\nThe history only explicitly attributes cause to the 16 Oct event as a power reboot. The 21 Oct and 4 Nov reboots are recorded without a stated cause; the log does not provide a most likely cause for those.",
     "prompt_tokens": 10182,
-    "latency_s": 51.9
+    "latency_s": 51.9,
+    "score": 2,
+    "reason": "Correctly counts 3 P-23 reboots on 2026-10-16, 2026-10-21, 2026-11-04 with accurate timestamps/descriptions matching e73,e131,e294. Correctly notes only e73 states power as cause and others have no stated cause, avoiding hallucination. No missing reboot events."
    },
    "none": {
     "answer": "The history provided is empty, so there is no information about P-23 reboots since Oct 9, their dates, or causes. I cannot determine the count or most likely cause from the available history.",
     "prompt_tokens": 121,
-    "latency_s": 12.8
+    "latency_s": 12.8,
+    "reason": "Answer claims history is empty and cannot determine count/dates/cause, but log contains 3 explicit P-23 reboot events: e73 on 2026-10-16 (Power reboot), e131 on 2026-10-21, e294 on 2026-11-04. Says doesn't know when log has answer.",
+    "score": 0
+   },
+   "memory_recall": {
+    "answer": "P-23 has 3 pole reboots since Oct 9:\n\n* 2026-10-16 16:06 – Power reboot, session carried over after reconcile [e73]\n* 2026-10-21 00:48 – Pole rebooted, running older plate logic without latest rules [e131]; telemetry gap 03:00-09:00 [e132]\n* 2026-11-04 01:02 – Pole rebooted at 01:02, uptime reset; engine auto-recovered [e294]\n\nMost likely cause in history is firmware/file related instability: held 3.5 h unnoticed after external session replaced firmware files [e116], and reboots with older plate logic / restart-related reporting issues [m17][m30].",
+    "prompt_tokens": 6472,
+    "latency_s": 88.4,
+    "selected": [
+     "m17",
+     "m25",
+     "m30",
+     "m92",
+     "m108"
+    ],
+    "reason": "Counts/dates for 3 P-23 reboots (2026-10-16 e73, 2026-10-21 e131, 2026-11-04 e294) are correct, but cause section is wrong/invented: cites non-existent sources [m17][m30] not in e1-e302 log, claims firmware/file instability as most likely cause while ignoring explicit log cause \"Power reboot\" in e73, with no log support linking e116 hold to reboots. Hallucinated citations = score 0.",
+    "score": 0
+   }
+  },
+  {
+   "q": "Which poles stopped reporting to the archive during these four weeks, and since when?",
+   "memory": {
+    "answer": "Stopped-reporting / archive issues in the four weeks:\n\n* P-23 telemetry gap 6 h starting 2026-10-21 03:00 [e132]; memory m17 open 2026-10-16..2026-10-21\n* P-24 telemetry gap 18:00-19:00 on 2026-10-21 [e152] and 2026-10-26 [e217]; memory m38 open 2026-10-21..2026-10-26\n* P-36 offline SSH closed/uploads stopped 2026-10-16 08:25 [e55]; memory m15 open 2026-10-16\n* P-01 offline SSH closed/uploads stopped 2026-10-16 17:07 [e77]; memory m20 open 2026-10-16\n* P-13 offline short entry/exit lost 2026-10-16 14:21 [e67]; memory m16 open 2026-10-16\n* P-10 history delivery stopped 2026-10-21 11:14 [e137]; memory m35 open 2026-10-21\n* P-08 secure shell upload failed 2026-10-23 15:14 [e187]; memory m53 open 2026-10-23\n\nP-05 low activity 2026-10-09 [e1][e3] is volume below normal, not a stop-reporting event per history.",
+    "prompt_tokens": 1382,
+    "latency_s": 65.3,
+    "reason": "Answer lists short/transient gaps (P-23, P-24) and SSH/upload issues but omits the main long-term archive outages: P-33, P-34, P-35 stopped reporting to the archive at 2026-10-21 19:00 with no data since [e158-e160], confirmed silent 3 days [e208-e210], 6 days [e227-e229], 9 days [e250-e252], 12 days [e268-e270]. Missing the key poles/dates that matter.",
+    "score": 1
+   },
+   "full_log": {
+    "answer": "P-33, P-34 and P-35 stopped reporting to the archive on 2026-10-21 19:00.\n\n* P-33 telemetry_gap: “Stopped reporting to the archive at 19:00; no data since” [e158]\n* P-34 telemetry_gap: “Stopped reporting to the archive at 19:00; no data since” [e159]\n* P-35 telemetry_gap: “Stopped reporting to the archive at 19:00; no data since” [e160]\n\nSubsequent notes confirm they remain silent, e.g. silent for 12 days on 2026-11-02 [e268][e269][e270]. No other poles show a persistent archive stop in the period.",
+    "prompt_tokens": 10172,
+    "latency_s": 52.3,
+    "reason": "Answer correctly identifies the only persistent archive-reporting outage: P-33, P-34, P-35 since 2026-10-21 19:00 per e158-e160, with continued silence confirmed through e268-e270. No other pole has a persistent archive stop; temporary gaps (P-23, P-24) are not archive-persistent and do not say \"to the archive\". No invented facts.",
+    "score": 2
+   },
+   "none": {
+    "answer": "The history provided contains no events, so there is no information about poles stopping reporting to the archive during these four weeks, and no dates or counts can be given.\n\nIf you provide the event history, I can identify which poles stopped reporting and since when.",
+    "prompt_tokens": 111,
+    "latency_s": 10.4,
+    "reason": "Answer claims no events/info, but log explicitly shows P-33, P-34, P-35 stopped reporting to archive at 2026-10-21 19:00 (e158-e160) and remained silent for 3/6/9/12 days in e208-e210, e227-e229, e250-e252, e268-e270. Says doesn't know when log has answer.",
+    "score": 0
+   },
+   "memory_recall": {
+    "answer": "Poles with archive reporting loss in the four-week window:\n\n* **P-33** – stopped reporting to archive at 2026-10-21 19:00 [e158]; still silent 9 days on 2026-10-30 [e250], 12 days on 2026-11-02 [e268]\n* **P-34** – stopped reporting to archive at 2026-10-21 19:00 [e159]; still silent 9 days on 2026-10-30 [e251], 12 days on 2026-11-02 [e269]\n* **P-35** – stopped reporting to archive at 2026-10-21 19:00 [e160]; still silent 9 days on 2026-10-30 [e252], 12 days on 2026-11-02 [e270]\n\nNo other poles show archive-stop events in the provided history.",
+    "prompt_tokens": 7131,
+    "latency_s": 81.4,
+    "selected": [
+     "m39",
+     "m40",
+     "m41",
+     "m15",
+     "m20",
+     "m14",
+     "m17",
+     "m38"
+    ],
+    "reason": "Answer correctly identifies the only persistent archive-reporting losses as P-33, P-34, P-35 starting 2026-10-21 19:00 per e158-e160, with correct still-silent follow-ups at 9 days (e250-e252) and 12 days (e268-e270). No other pole has a persistent \"to the archive / no data since\" event; other telemetry_gaps are short resolved 1h/6h gaps (P-23, P-24). No hallucinated facts.",
+    "score": 2
+   }
+  },
+  {
+   "q": "Have P-38 or P-39 shown parked-car (occupied) readings on an empty bay at night before? When?",
+   "memory": {
+    "answer": "Yes.\n\nP-39: false occupancy at dawn on 2026-10-24 creating multiple sessions with hold not cleared due to night model score staying mid range [m56]. Cited events: hold not cleared 2026-10-24 01:48 [e199]; empty bay read as occupied creating two dawn sessions 2026-10-24 04:00 [e203].\n\nP-38: false occupancy on 2026-10-24 read empty bay as occupied creating four hour session ended 09:34 [m57]. Event: 2026-10-24 05:11 P-38 false_occupancy, session ended 09:34 [e207].\n\nNo other night-time empty-bay occupied readings for P-38/P-39 are in the history.",
+    "prompt_tokens": 1715,
+    "latency_s": 38.2,
+    "reason": "Answer correctly identifies both night/dawn false-occupancy events: P-39 e203 on 2026-10-24 04:00 empty bay read as occupied creating two dawn sessions (supported by e199 hold not cleared night model mid-range), and P-38 e207 on 2026-10-24 05:11 empty bay read as occupied 4hr session ended 09:34. Dates, poles, descriptions match log exactly. Claim of no other night-time events for P-38/P-39 is supported by log search – only other P-38 hold e202 is occupied-with-no-session (opposite), not false occupancy.",
+    "score": 2
+   },
+   "full_log": {
+    "answer": "Yes for P-38, no record for P-39 in the history.\n\nP-38 false occupancy on an empty bay at night/early morning:\n* 2026-10-24 04:00 false_occupancy: Empty bay read as occupied creating two dawn sessions [e203]\n* 2026-10-24 05:11 false_occupancy: Empty bay read as occupied creating four hour session (resolution: Session ended 09:34) [e207]\n\nNo false-occupancy / occupied-on-empty events for P-39 are present in the Oct 9 – Nov 4 log.",
+    "prompt_tokens": 10181,
+    "latency_s": 33.4,
+    "reason": "Answer misattributes [e203] to P-38 and falsely denies P-39. Log shows e203 is P-39 false_occupancy at 2026-10-24 04:00 (two dawn sessions), while P-38 false_occupancy is only e207 at 2026-10-24 05:11. So both poles have night empty-as-occupied events, not P-38 only. Pole swap + false no-record = hallucinated/wrong.",
+    "score": 0
+   },
+   "none": {
+    "answer": "The history provided contains no events for P-38 or P-39, and no information about parked-car / occupied readings on empty bays at night. I cannot confirm any such readings from the available history.",
+    "prompt_tokens": 120,
+    "latency_s": 12.2,
+    "score": 0,
+    "reason": "Answer claims no events for P-38/P-39 and no occupied-on-empty info, but log has many: e203 2026-10-24 04:00 P-39 false_occupancy 'Empty bay read as occupied creating two dawn sessions' and e207 2026-10-24 05:11 P-38 false_occupancy 'Empty bay read as occupied creating four hour session'. Says doesn't know when log has answer."
+   },
+   "memory_recall": {
+    "answer": "History shows false occupied readings on empty bays on 2026-10-24 only:\n\n* P-39: hold not cleared night model score stayed mid range at 2026-10-24 01:48 [e199]; false_occupancy “Empty bay read as occupied creating two dawn sessions” at 2026-10-24 04:00 [e203]. Memory m56 notes dawn false occupancy 2026-10-24.\n* P-38: false_occupancy “Empty bay read as occupied creating four hour session (resolution: Session ended 09:34)” at 2026-10-24 05:11 [e207]. Memory m57 notes false occupancy 2026-10-24.\n\nNo earlier night false-occupied events for P-38 or P-39 are present in the provided history.",
+    "prompt_tokens": 6208,
+    "latency_s": 62.8,
+    "selected": [
+     "m56",
+     "m57"
+    ],
+    "reason": "Answer correctly identifies the only P-38/P-39 empty-bay-as-occupied night events: e203 P-39 false_occupancy 2026-10-24 04:00 \"Empty bay read as occupied creating two dawn sessions\" and e207 P-38 false_occupancy 2026-10-24 05:11 \"Empty bay read as occupied creating four hour session\". e199 hold 01:48 exists as cited. No earlier P-38/P-39 false_occupancy in log. Dates, poles, and quotes match log.",
+    "score": 2
+   }
+  },
+  {
+   "q": "What went wrong the last times we rolled out new software to the whole fleet, and what did we learn?",
+   "memory": {
+    "answer": "The last fleet-wide software rollouts in history are both on 2026-10-23:\n\n* Firmware auto resume after stable empty deployed to operating bays on 2026-10-23. Resolution: Unknown exit times split as review required without invented times [e177].\n* OCR v1.4 plus track fragment merge patch rolled out on 2026-10-23 with engines restarted for deployment round [e196][e197].\n\nHistory does not record an explicit lesson learned beyond the resolution that unknown exit times were split as review required.",
+    "prompt_tokens": 996,
+    "latency_s": 41.2,
+    "reason": "Answer claims the last fleet-wide rollouts are both on 2026-10-23 [e177][e196]. Log shows later fleet-wide deploys: OCR v1.5 on 2026-10-24 [e200][e206], firmware late-report to 36 bays on 2026-10-30 [e256], exit reader to 35 bays on 2026-10-30 [e259], plate photo fill firmware to 36 poles on 2026-11-03 [e289]. Wrong on dates/recency that matter, missing key facts.",
+    "score": 0
+   },
+   "full_log": {
+    "answer": "Last whole-fleet software pushes in the window succeeded:\n\n* 2026-10-30 12:24 firmware with late-report support deployed to 36 bays [e256]; 18:30 exit reader/selector logging enabled on 35 bays [e260].\n* 2026-11-03 16:15 plate photo fill firmware deployed to 36 poles with successful transmissions [e289]; late fill switch turned on on all 36 [e290].\n\nEarlier fleet-wide rollouts caused problems, e.g.:\n\n* 2026-10-20 13:07 fleet engine rollout started [e126] → 13:50 twenty-one poles sent zero plate updates after restart, delivery code fault [e127].\n* 15 Oct mass deploys led to holds, billing cases and version-recovery holds [e19][e23][e145].\n\nLearned: pilot then sequential rollout, avoid simultaneous restarts, and verify plate delivery before fleet enable.",
+    "prompt_tokens": 10178,
+    "latency_s": 64.1,
+    "reason": "Mostly correct counts/dates for Oct 20 21-pole zero-plate fault and Oct 30/Nov 3 36-pole pushes, but misattributes e145 (Oct-21 version-recovery hold) to Oct 15, miscites e259 as e260, omits key rollout impacts (P-23 left untouched e257, ~500 sessions lacked plates e136, journal-lock restarts e149), and states generic lessons not explicit in log.",
+    "score": 1
+   },
+   "none": {
+    "answer": "The history provided contains no events, so I cannot answer that.\n\nThere is no record of past software rollouts, failures, or lessons learned in the available history.",
+    "prompt_tokens": 117,
+    "latency_s": 8.8,
+    "score": 0,
+    "reason": "Answer claims no events/record of rollouts, but log contains many fleet-wide deploys with failures, e.g. e126 2026-10-20 fleet engine rollout, e127 21 poles zero plate updates, e135-e136 secondary camera fix and ~500 sessions lacked plates; also e20-e24, e141, e256, e289 etc. Saying it doesn't know when log has answer scores 0."
+   },
+   "memory_recall": {
+    "answer": "The most recent whole-fleet software events in history are:\n\n* 2026-10-19: Disk guard/diagnostic tool [e107], engine startup grace fix [e113], firmware service restart rollout [e115].\n* 2026-10-20: 21 poles sent zero plate updates after restart due to delivery code fault [e127].\n* 2026-10-21: Plate delivery restored by secondary camera fix rollout [e135].\n* 2026-10-23: OCR v1.4 plus track fragment merge patch rollout [e196] with engines restarted [e197].\n* 2026-10-24: OCR v1.5 rollout completed on all 36 bays [e206].\n* 2026-10-30: Firmware with late-report support to 36 bays [e256].\n* 2026-11-03: Plate photo fill firmware deployed to 36 poles with successful transmissions [e289].\n\nHistory does not contain an explicit stated lesson learned.",
+    "prompt_tokens": 6706,
+    "latency_s": 74.4,
+    "selected": [
+     "m26",
+     "m29",
+     "m33",
+     "m44",
+     "m54",
+     "m59",
+     "m80",
+     "m105"
+    ],
+    "reason": "Answer lists real deploys without hallucination but misses key facts that matter for \"what went wrong / what learned\": omits ~500 sessions lacked plates impact [e136/ e282], omits pilot-then-sequential lesson [e278], omits excluding bays on hold [e200] and paused-after-nine phased restart [e149], and omits Oct 30 hold left untouched during rollout [e257]. Claims no lesson while log shows procedural learning.",
+    "score": 1
+   }
+  },
+  {
+   "q": "Has the archive server's disk filled up before? What did we do about it?",
+   "memory": {
+    "answer": "No fill-up is recorded in the history.\n\nServer video disk was 62 % after cleanup on 2026-10-30 [e248], was about four days from full on 2026-11-02 [e271]. Automatic video deletion was paused with a stop file on 2026-11-02 while hold refresh continues [e283].\n\nLater duplicate log cleanup finished on 2026-11-04, removed about 1.27 TB and usage went to 72 % [e301]; memory m110.\n\nTraining server was 93 % full with 34 GB free on 2026-10-30 [e249].",
+    "prompt_tokens": 1542,
+    "latency_s": 34.4,
+    "reason": "Answer claims 'No fill-up is recorded' but log records e56 Training disk full (177GB freed) and e240 Dataset disk full. It omits key near-full/fill events and mitigations: e178 labeling 93% + delete, e241 video 93% 2-days remaining, e274/e276 1.4TB reclaim 77->71%, and includes unexplained 'memory m110' not in log. Partly correct citations but wrong on core fill question and incomplete.",
+    "score": 0
+   },
+   "full_log": {
+    "answer": "Yes. The training/archive storage filled/blocked:\n\n* 2026-10-16 09:00 server disk: “Training disk full, blocking jobs and server writes” [e56]. Resolution: Owner deleted old capture folders, 177 GB freed [e56].\n\nArchive disk itself was not reported full, but was degraded:\n* 2026-10-15 06:00 server disk: Archive disk single spinning disk, high wait and slow reads [e32].\n\nRelated server disk pressure was also mitigated, e.g. labeling server disk reached 93% full on 2026-10-23 and old video was deleted to free space [e178].",
+    "prompt_tokens": 10173,
+    "latency_s": 38.6,
+    "reason": "Facts cited are correct (e56 training disk full + 177GB freed, e32 archive disk slow, e178 labeling disk 93% + old video deleted) but incomplete: omits later server-disk full/near-full events that matter to the question — e240 dataset disk full, e241 video volume 93% full, e249 training server 93% full, and major mitigations e276 (~1.4TB reclaimed) and e301 (~1.27TB removed).",
+    "score": 1
+   },
+   "none": {
+    "answer": "The history provided contains no events about the archive server's disk usage, so I cannot confirm whether it has filled up before or what action was taken.",
+    "prompt_tokens": 112,
+    "latency_s": 9.1,
+    "score": 0,
+    "reason": "Log DOES contain server/archive disk events. e32 Archive disk slow reads, e56 Training disk full (177GB freed), e178 Labeling disk 93% (old video deleted), e240-241 Dataset/Video 93% full, e248/e276/e301 cleanups reclaiming 1.4TB/1.27TB. Answer falsely claims 'no events' and says cannot confirm when log has answers."
+   },
+   "memory_recall": {
+    "answer": "No fill-up is recorded in the history; the video volume was only reported as approaching full.\n\n* 2026-10-30: Video volume 62% after cleanup, daily growth 0.7TB [e248]\n* 2026-11-02: Video disk about four days from full with high daily growth [e271]\n* 2026-11-02: Automatic video deletion paused with stop file, hold refresh continues [e283]\n* 2026-11-04: Duplicate log cleanup finished, removed ~1.27 TB, usage 72% [e301]\n\nHistory does not show a completed fill-up event.",
+    "prompt_tokens": 6342,
+    "latency_s": 61.0,
+    "selected": [
+     "m81",
+     "m89",
+     "m96",
+     "m110",
+     "m82"
+    ],
+    "reason": "Answer claims no fill-up ever occurred, but log has explicit full events: [e56] 2026-10-16 Training disk full blocking jobs/writes (177 GB freed) and [e240] 2026-10-28 Dataset disk full. It omits those remediations and mischaracterizes history as only approaching-full.",
+    "score": 0
+   }
+  },
+  {
+   "q": "Which pole had the most holds, and what usually cleared them?",
+   "memory": {
+    "answer": "History shows a tie for most mentions:\n\n* P-38 open, seen 2x, 2026-10-21..2026-10-22 [m32]\n* P-39 open, seen 2x, 2026-10-24..2026-10-24 [m56]\n* P-34 open, seen 1x, 2026-10-19..2026-10-19 [m24]\n\nThe provided events do not give a total hold count per pole.\n\nFor P-38: worker input queue changed to drop oldest sample to prevent stalls [e134]; a hold was “Held bay recovered through firmware fix without engine restart” [e168].\n\nFor P-39: hold not cleared because night model score stayed mid range [e199]; false occupancy at dawn creating sessions [e203].",
+    "prompt_tokens": 432,
+    "latency_s": 45.2,
+    "score": 0,
+    "reason": "Answer claims tie at 2x between P-38/P-39 and says log gives no total hold count. Log shows P-38 has 8 holds (e88,e99,e109,e119,e129,e146,e168,e202) – clearly most. Most clear via auto-reconcile/reconnect (e88 auto-reconciled, e99 auto-reconnected, e109 reconnected, e168 firmware fix). Answer invents [m32][m56][m24] refs not in log and misses key holds."
+   },
+   "full_log": {
+    "answer": "P-38 shows the highest number of hold events in the window.\n\nHolds for P-38:\n* brief hold auto-reconciled within minute [e88]\n* brief hold auto-reconnected within minutes [e99]\n* held 40 min for producer unavailable, reconnected with no missed entries [e109]\n* held for producer unavailable with open session [e119]\n* held for producer review, departure preserved in journal via ack [e129]\n* held bay recovered through firmware fix without engine restart [e168]\n* producer unavailable hold with no session while occupied [e202]\n\nClears are most often auto-reconnect / auto-reconcile within minutes, e.g. auto-reconciled [e88], auto-reconnected [e99], and sometimes firmware / journal fixes.",
+    "prompt_tokens": 10169,
+    "latency_s": 79.7,
+    "reason": "Correctly identifies P-38 as most holds (8 hold-type events), and descriptions match log with no hallucination. However list is incomplete: omits e146 P-38 hold (empty bay recovery failed with database interface error, needs journal lock fix). Thus missing a key hold cause/clear, so partly complete.",
+    "score": 1
+   },
+   "none": {
+    "answer": "The history provided contains no parking pole events, so there is no data on holds or clearances. I cannot determine which pole had the most holds or what usually cleared them from the available history.",
+    "prompt_tokens": 108,
+    "latency_s": 8.5,
+    "score": 0,
+    "reason": "Log contains ~30+ hold events. Answer falsely claims \"no parking pole events\" and says cannot determine. In fact P-38 has most holds (e88, e99, e109, e119, e129, e146, e168, e202 – 7-8 holds) usually auto-reconciled/auto-reconnected or reconnected, e.g. e88 Auto-reconciled, e99 Auto-reconnected, e109 reconnected. Says doesn't know when log has answer."
+   },
+   "memory_recall": {
+    "answer": "P-38 had the most holds.\n\nHolds on P-38 were cleared / mitigated in different ways in the history:\n* Held for producer review with departure preserved in journal via ack [e129] – 2026-10-20 23:41, referenced in m23\n* Worker input queue changed to drop oldest sample to prevent stalls [e134] – 2026-10-21 09:32, referenced in m32\n* Held bay recovered through firmware fix without engine restart, baseline verified same stream [e168] – 2026-10-22 09:25\n\nP-15 has one producer-review hold [e133] on 2026-10-21.",
+    "prompt_tokens": 6510,
+    "latency_s": 104.3,
+    "selected": [
+     "m23",
+     "m32",
+     "m31",
+     "m38",
+     "m57"
+    ],
+    "reason": "Correctly identifies P-38 as pole with most holds (~8 holds: e88,e99,e109,e119,e129,e146,e168,e202 vs next 4), but fails to answer 'what usually cleared them'. Usual pattern in log is auto-reconciled/auto-reconnected within minutes (e88 Auto-reconciled, e99 Auto-reconnected, e109 reconnected with no missed entries). Answer omits these, lists only 3 events, and misclassifies e134 config (worker queue change) as a hold clearance. Incomplete on key facts.",
+    "score": 1
+   }
+  },
+  {
+   "q": "When did labeler lag peak, and what brought it down?",
+   "memory": {
+    "answer": "Labeler lag peaked on 2026-11-04.\n\n* Peak: 9.1 hours registration delay at 2026-11-04 10:00, “intake slower than inflow under high load” [e296]; video registration was about eight hours behind with file read failures at 02:40 that day [e295].\n* Downtrend: delay was 2.9 hours at 2026-11-04 14:00 “after improvement, compression starving registration CPU” [e299].\n\nThe history notes the improvement but does not specify what action caused the drop.",
+    "prompt_tokens": 714,
+    "latency_s": 30.5,
+    "score": 0,
+    "reason": "Peak date/delay correct (9.1h at 2026-11-04 10:00 [e296]), but answer claims no cause specified when log does specify: e298 at 10:22 reduced compression jobs 8→5 effective next run between peak and 2.9h at 14:00 [e299], with e299 noting compression starving registration CPU. Says doesn't know when log has answer."
+   },
+   "full_log": {
+    "answer": "Labeler lag peaked at 9.1 hours registration delay on 2026-11-04 10:00 [e296]; video registration was ~8 h behind at 02:40 that day [e295].\n\nIt fell after compression load was reduced:\n* 2026-11-04 10:22 compression jobs reduced from eight to five [e298]\n* 2026-11-04 14:19 compression set to two jobs daytime / five nighttime [e301]\n\nDelay was 2.9 h by 14:00 after improvement [e300].",
+    "prompt_tokens": 10169,
+    "latency_s": 43.3,
+    "reason": "Peak 9.1h on 2026-11-04 10:00 [e296] and ~8h behind at 02:40 [e295] verified. Reductions 8→5 at 10:22 [e298] and 2 daytime/5 nighttime at 14:19 [e300, cited as e301] verified, and 2.9h at 14:00 [e299, cited as e300] verified. Facts, dates, values and cause (compression load starving registration) all correct; only citation numbers off by one, no hallucinated values.",
+    "score": 2
+   },
+   "none": {
+    "answer": "The history provided contains no events about labeler lag, so I cannot determine when it peaked or what brought it down.",
+    "prompt_tokens": 108,
+    "latency_s": 8.5,
+    "reason": "Answer claims no labeler_lag events, but log has many: e62, e124, e195, e242, e295 (8h behind), e296 (peak 9.1h on 2026-11-04 10:00), e299 (down to 2.9h after e298/e300 compression jobs 8->5->2 daytime). Says doesn't know when log has answer.",
+    "score": 0
+   },
+   "memory_recall": {
+    "answer": "Labeler lag peaked on 2026-11-04.\n\n* Peak: 9.1 hours registration delay at 2026-11-04 10:00, intake slower than inflow under high load [e296]; also noted as peaking at 9.1 hours on 2026-11-04 with file read failures [m109]. Prior at 02:40 it was ~8 hours behind with file read failures [e295].\n\nIt fell to 2.9 hours by 2026-11-04 14:00 “after improvement” [e299]. The history notes the improvement and that compression was starving registration CPU at that time, but does not specify what action caused the reduction.",
+    "prompt_tokens": 6418,
+    "latency_s": 68.3,
+    "selected": [
+     "m109",
+     "m110",
+     "m107",
+     "m103"
+    ],
+    "reason": "Peak time/value correct (9.1h at 2026-11-04 10:00 e296, prior 8h at 02:40 e295), but answer hallucinates non-existent [m109] and misattributes file read failures to the 10:00 peak (log says intake slower than inflow under high load). Crucially claims cause of drop to 2.9h at 14:00 e299 is unspecified, when log has e298 compression jobs reduced 8→5 at 10:22 between peak and recovery, with e299 noting compression starving registration CPU – the mitigation that brought it down. Says doesn't know when log has answer plus invented citation.",
+    "score": 0
+   }
+  },
+  {
+   "q": "Which poles had power or network problems, and on which days?",
+   "memory": {
+    "answer": "Power / network problems from history:\n\n* P-19: unreachable / connection refused 2026-10-15 [e46][e48]; offline again 2026-10-17 [e85]\n* P-26: terminal network fault fixed on-site 2026-10-22 [e172]\n* P-32: external access port blocked 2026-10-23 [e194]\n* P-15: USB link write error / reconnect 2026-10-26 [e222]\n\nFleet:\n* 2026-10-21: nine bays powered down for removal [e154]; three bays removed and unreachable [e155]\n* 2026-10-26: nine bays lost power 18:27–19:23 [e220]\n* 2026-10-27: overnight power loss affected three bays [e224]\n\nP-33, P-34, P-35 telemetry gaps started 2026-10-21 19:00 [e158][e159][e160] and continued through 2026-11-02.",
+    "prompt_tokens": 1555,
+    "latency_s": 69.7,
+    "reason": "Answer lists some correct power/network items (P-19, P-26 field_visit, P-32, P-15, 10-21 power down/removal, 10-26 power loss, 10-27 power loss, P-33/34/35 gaps) but omits many material log events: P-01 SSH closed 10-16, P-36 SSH closed 10-16, P-23 power reboot 10-16, fleet power cycles broke packet path 10-16, fleet multiple poles unreachable overnight 10-17, fleet SSH refusals spike 10-17, fleet router refused ports 10-19, P-23 6h telemetry gap 10-21, P-24 1h gaps 10-21 and 10-26, P-12 upload fail 10-22, P-26 day-long internet outage 10-22, P-08 SSH fail 10-23, P-11 external port closed 10-24, fleet control-server outage 10-26, fleet 5 bays unreachable 10-30, fleet Group B router refusal 11-02, etc. Partly correct, missing key facts.",
+    "score": 1
+   },
+   "full_log": {
+    "answer": "Power problems:\n* P-09 USB overcurrent 2026-10-20 [e123]\n* Fleet power-down of nine bays 2026-10-21 [e154]; power restored in B bays 2026-10-21 [e162]\n* Fleet nine bays lost power 2026-10-26 [e220]\n* Overnight power loss affected three bays 2026-10-27 [e224]\n\nNetwork / offline problems:\n* P-19 unreachable / network blip 2026-10-15 [e47][e48]; SSH closed again 2026-10-17 [e85]\n* P-36 SSH closed, uploads stopped 2026-10-16 [e55]\n* P-01 SSH closed, uploads stopped 2026-10-16 [e77]\n* P-12 SSH upload failed once 2026-10-22 [e171]\n* P-08 SSH upload failed 2026-10-23 [e187]\n* P-32 external access port blocked 2026-10-23 [e194]\n* P-11 external port closed 2026-10-24 [e205]\n* P-15 USB link write error 2026-10-26 [e222]\n\nFleet-wide network issues also noted 2026-10-17 [e87][e92], 2026-10-19 [e120], 2026-10-26 [e214], 2026-11-02 [e281].",
+    "prompt_tokens": 10169,
+    "latency_s": 91.7,
+    "reason": "Answer lists real events with correct dates but is incomplete. Missing key power/network/offline facts: P-23 power reboot 10-16 [e73], P-13 offline 10-16 [e68], fleet reboot power cycles 10-16 [e58], three bays removed/unreachable 10-21 [e155], P-26 terminal network fault + day-long internet outage 10-22 [e172][e174], P-25 offline 10-30 [e260], five bays unreachable 10-30 [e262]. Also cites e47 for P-19 unreachable instead of e46. No invented poles, so partly correct.",
+    "score": 1
+   },
+   "none": {
+    "answer": "The history provided contains no events, so there is no information about poles with power or network problems and no dates to report.",
+    "prompt_tokens": 108,
+    "latency_s": 9.3,
+    "score": 0,
+    "reason": "Answer claims no events / no information, but log contains many power/network events, e.g. P-19 offline 10-15 likely power/network and back online network blip, P-36/P-01 SSH offline 10-16, fleet SSH/router outages 10-17/10-19/10-26/11-02, fleet power loss 10-21 nine bays down, 10-26 nine bays lost power, 10-27 overnight power loss, plus reboots/power cycles. Says doesn't know when log has answer => score 0."
+   },
+   "memory_recall": {
+    "answer": "Power/network issues in history:\n\n* P-19 – 2026-10-15 unreachable, connection refused, likely power or network [e46]; again SSH closed 2026-10-17 [e85]\n* P-36 – 2026-10-16 SSH closed, uploads stopped after reconcile [e55]\n* P-01 – 2026-10-16 SSH closed, uploads stopped after rollout [e77]\n* P-26 – 2026-10-22 terminal network fault fixed on-site [e172]; payment controller reboot after day-long internet outage [e174]\n* P-32 – 2026-10-23 external access port blocked [e194]\n* P-11 – 2026-10-24 external port closed, accessed via neighboring bay LAN [e205]\n* P-15 – 2026-10-26 USB link write error, terminal reconnected [e222]\n\nP-13 2026-10-16 [e67] is history unbound data loss, not a power/network fault per history.",
+    "prompt_tokens": 6737,
+    "latency_s": 100.0,
+    "selected": [
+     "m14",
+     "m15",
+     "m16",
+     "m20",
+     "m46",
+     "m47",
+     "m55",
+     "m58",
+     "m62",
+     "m85"
+    ],
+    "score": 1,
+    "reason": "Partly correct but incomplete. Listed poles/dates match log (P-19 e46/e85, P-36 e55, P-01 e77, P-26 e172/e174, P-32 e194, P-11 e205, P-15 e222) but omits many power/network events: P-23 power reboot 10-16 e73, P-34 reboot 10-19 e117, P-09 power 10-20 e123, P-12 network 10-22 e171, P-08 network 10-23 e187, fleet power 9 bays 10-21 e154, 9 bays 10-26 e220, 3 bays overnight 10-27 e224, fleet network/router outages e92/e120/e214/e281, fleet offline e87/e155/e262, P-19 network blip e48, etc."
+   }
+  },
+  {
+   "q": "What changed on P-10 around Oct 15-16?",
+   "memory": {
+    "answer": "P-10 shows no change specifically dated Oct 15-16 in the history.\n\nThe first recorded P-10 issue is false occupancy:\n* 2026-10-16 15:50 P-10 false_occupancy: Merchant cart read as occupied on both engines [e72]\n\nThis is the start of the memory m18 “P-10 false occupancy triggered by merchant cart on 2026-10-21” which is seen 2026-10-16..2026-10-21. No other P-10 events are cited for 15-16 Oct.",
+    "prompt_tokens": 576,
+    "latency_s": 26.8,
+    "reason": "Answer claims no P-10 change on Oct 15-16 and first event is e72 on Oct 16 15:50. Log shows e45 rollback to legacy on Oct 15 16:40, e51 rollback Oct 16 00:30, e72 false_occupancy Oct 16 15:50, e75 converted to standard stack Oct 16 16:16. Omits the rollbacks/deploy that directly answer the question and invents memory m18 date range.",
+    "score": 0
+   },
+   "full_log": {
+    "answer": "P-10 had repeated rollbacks and re-deploys:\n\n* 2026-10-15 16:40 rollback to legacy engine due cart misread and deadlock [e45]\n* 2026-10-16 00:30 rollback to legacy engine after cart read as occupied [e51]\n* 2026-10-16 15:50 false_occupancy: Merchant cart read as occupied on both engines [e72]\n* 2026-10-16 16:16 deploy: Converted to standard stack, open session carried over [e75]\n\nSo the pole was rolled back twice in ~8 h and then moved to standard stack later on 16 Oct.",
+    "prompt_tokens": 10169,
+    "latency_s": 31.2,
+    "reason": "Answer lists all 4 P-10 events in window: 10-15 16:40 rollback (cart misread+deadlock), 10-16 00:30 rollback (cart as occupied), 10-16 15:50 false_occupancy (cart both engines), 10-16 16:16 standard stack conversion. Matches log verbatim, no hallucinations, no omissions.",
+    "score": 2
+   },
+   "none": {
+    "answer": "The history provided contains no events for P-10, and no history is available at all. Therefore I cannot confirm what changed on P-10 around Oct 15-16 from the given history.",
+    "prompt_tokens": 108,
+    "latency_s": 9.0,
+    "score": 0,
+    "reason": "Log contains multiple P-10 events Oct15-16: rollback to legacy engine Oct15 16:40 for cart misread/deadlock, rollback Oct16 00:30 after cart read as occupied, false_occupancy cart read Oct16 15:50, convert to standard stack Oct16 16:06. Answer falsely claims no events/history and says cannot confirm."
+   },
+   "memory_recall": {
+    "answer": "History only records the first false occupancy occurrence, not a change.\n\n* 2026-10-16 15:50 P-10 false_occupancy: Merchant cart read as occupied on both engines [e72]\n\nThe memory notes a later recurrence on 2026-10-21 [e138], but the provided history does not contain information about what changed on P-10 around Oct 15-16.",
+    "prompt_tokens": 6091,
+    "latency_s": 55.0,
+    "selected": [
+     "m18"
+    ],
+    "reason": "Agent claims log has no info about what changed on P-10 around Oct 15-16, but log contains: e45 2026-10-15 16:40 rollback to legacy due cart misread and deadlock, e51 2026-10-16 00:30 rollback to legacy after cart read as occupied, e75 2026-10-16 16:16 converted to standard stack. Agent omitted these and said it doesn't know when answer exists. Scores 0 per rubric.",
+    "score": 0
+   }
+  },
+  {
+   "q": "Is there an open device-health issue I should send a technician for this week? Give the pole and why.",
+   "memory": {
+    "answer": "Open memories are present but no dispatch instruction is in history.\n\nOpen this week:\n* P-04 firmware reconnection hold active 2026-10-30 with no open session [e253][m78]; late fill switch turned on 2026-11-02 without restart, service active and healthy [e286][m100]\n* P-23 engine restarted to common set 2026-11-02 with health showing occupied without errors [e273][m92]; prior telemetry gap 6h after reboot 2026-10-21 [e132][m17]\n* P-09 USB overcurrent moved payment device port causing payment connection failure 2026-10-20 [e123][m27]\n\nHistory does not state a technician is required for this week.",
+    "prompt_tokens": 706,
+    "latency_s": 64.4,
+    "reason": "Answer claims no technician dispatch needed and lists P-04, P-23, P-09 as open, but misses the actual persistent open device-health issue: P-33, P-34, P-35 stopped reporting 2026-10-21 19:00 [e158-e160] and remain silent for 3 days [e208-e210], 6 days [e227-e229], 9 days [e250-e252], 12 days [e268-e270], with digests showing only 36/39 poles reporting through 2026-11-04 [e288][e293][e302]. P-04 was healthy after 11-02 [e286], P-23 was healthy occupied without errors [e273] plus auto-recovery reboot [e294], P-09 is old 10-20 [e123]. Saying history has no dispatch when log shows 3 poles down 2 weeks is wrong and omits key poles/dates/cause.",
+    "score": 0
+   },
+   "full_log": {
+    "answer": "Yes. P-33, P-34 and P-35 have a persistent telemetry gap with no archive reporting.\n\n* P-33: stopped reporting 2026-10-21 19:00 [e158]; still not reporting 12 days later 2026-11-02 09:00 [e268]\n* P-34: stopped reporting 2026-10-21 19:00 [e159]; still not reporting 12 days later 2026-11-02 09:00 [e269]\n* P-35: stopped reporting 2026-10-21 19:00 [e160]; still not reporting 12 days later 2026-11-02 09:00 [e270]\n\nAll three remain silent through 2026-11-04, indicating an open device-health / connectivity issue needing on-site technician visit.",
+    "prompt_tokens": 10178,
+    "latency_s": 34.0,
+    "score": 2,
+    "reason": "Correct and complete: P-33/P-34/P-35 stopped reporting 2026-10-21 19:00 [e158-e160] and still silent 3d [e208-e210], 6d [e227-e229], 9d [e250-e252], 12d on 2026-11-02 [e268-e270]; fleet digests remain 36/39 through 2026-11-04, confirming open gap. No recovery logged. Technician recommendation justified."
+   },
+   "none": {
+    "answer": "No history is available, so I cannot check for open device-health issues. There is no record of poles, health alerts, or technician requests to review for this week.",
+    "prompt_tokens": 117,
+    "latency_s": 8.9,
+    "score": 0,
+    "reason": "Agent claims no history/records exist, but log has explicit open device-health issues: P-33, P-34, P-35 telemetry_gap silent since 2026-10-21 19:00, still silent for 12 days on 2026-11-02, with fleet digests showing only 36/39 poles reporting through 2026-11-04. Says doesn't know when log has answer."
+   },
+   "memory_recall": {
+    "answer": "Yes. Device-health telemetry gaps are still open for P-33, P-34 and P-35.\n\n* P-33: telemetry_gap open, last noted 2026-11-02, silent for 12 days [e268]; previously 9 days on 2026-10-30 [e250]\n* P-34: telemetry_gap open, last noted 2026-11-02, silent for 12 days [e269]; previously 9 days on 2026-10-30 [e251]\n* P-35: telemetry_gap open, last noted 2026-11-02, silent for 12 days [e270]; previously 9 days on 2026-10-30 [e252]\n\nP-31 is also open for missed_plate: stuck showing recognizing for one hour with empty identity on 2026-11-02 [e267], memory m88.",
+    "prompt_tokens": 6710,
+    "latency_s": 89.7,
+    "selected": [
+     "m88",
+     "m39",
+     "m40",
+     "m41"
+    ],
+    "reason": "P-33/34/35 telemetry gaps are correctly cited as still open (e268-e270 silent 12 days on 2026-11-02, e250-e252 silent 9 days), consistent with 36/39 digests, but answer adds hallucinated/invented material: 'memory m88' appears nowhere in log, and claims P-31 missed_plate is 'also open' when e267 states resolution 'Fixed in tests to ship with selector patch'. Hallucinated facts require score 0.",
+    "score": 0
+   }
+  },
+  {
+   "q": "P-33, P-34 and P-35 have been silent for 12 days. Should I send someone, and why?",
+   "memory": {
+    "answer": "History shows telemetry gaps, not dispatch guidance.\n\nP-33 stopped reporting 2026-10-21 19:00 [e158]; confirmed silent for 12 days on 2026-11-02 09:00 [e268].\nP-34 stopped reporting 2026-10-21 19:00 [e159]; confirmed silent for 12 days on 2026-11-02 09:00 [e269]. Also rebooted 2026-10-19 17:02 [e117].\nP-35 stopped reporting 2026-10-21 19:00 [e160]; confirmed silent for 12 days on 2026-11-02 09:00 [e270].\n\nThe provided history does not contain information on whether to send someone and why.",
+    "prompt_tokens": 861,
+    "latency_s": 34.8,
+    "score": 0,
+    "reason": "Answer lists stop dates and 12-day confirmations correctly but omits key cause facts and claims no guidance when log has it. Log shows e154 nine bays powered down for removal work and e155 three bays removed/unreachable during construction work with reinstall pending, temporally linked to e158-e160 stops at 19:00 same day, plus e156 removal context for P-33. Claiming \"does not contain information on whether to send someone and why\" is saying unknown when log has the answer."
+   },
+   "full_log": {
+    "answer": "Yes. They stopped reporting at 2026-10-21 19:00 [e158][e159][e160] after construction removal.\n\n* 2026-10-21 18:17 fleet power: Nine bays powered down for removal work [e154]\n* 2026-10-21 18:17 fleet offline: Three bays removed and unreachable during construction work; Reinstall and setup checks pending when power returns [e155]\n\nTelemetry_gap notes persist:\nsilent for 3 days 2026-10-24 [e208][e209][e210], 6 days 2026-10-27 [e227][e228][e229], 9 days 2026-10-30 [e250][e251][e252], 12 days 2026-11-02 [e268][e269][e270].\n\nNo reinstall / recovery events are logged through 2026-11-04.",
+    "prompt_tokens": 10183,
+    "latency_s": 54.3,
+    "score": 2,
+    "reason": "Answer correctly states stop time 2026-10-21 19:00 for P-33/34/35 [e158-160], links to 18:17 removal work power-down of nine bays [e154] and three bays removed unreachable pending reinstall [e155], correctly tracks persistence 3d [e208-210], 6d [e227-229], 9d [e250-252], 12d [e268-270], and correctly notes no reinstall/recovery through 2026-11-04. No hallucinated facts; recommendation to send someone follows log resolution."
+   },
+   "none": {
+    "answer": "The history provided contains no events for P-33, P-34 or P-35, so I cannot verify their silence duration or recent status. Without history I cannot confirm they have been silent for 12 days or recommend a dispatch.",
+    "prompt_tokens": 122,
+    "latency_s": 10.5,
+    "score": 0,
+    "reason": "Log contains explicit P-33/P-34/P-35 silence events: stopped reporting 2026-10-21 19:00 [e158-e160], still silent 3 days [e208-e210], 6 days [e227-e229], 9 days [e250-e252], 12 days [e268-e270], plus cause context: nine bays powered down for removal work [e154] and three bays removed/unreachable during construction work [e155]. Answer falsely claims \"no events\" and refuses to verify/dispatch when log has the answer."
+   },
+   "memory_recall": {
+    "answer": "Telemetry gaps for P-33, P-34, P-35 started 2026-10-21 19:00 [e158][e159][e160] and were still ongoing:\n\n* silent for 9 days on 2026-10-30 09:00 [e250][e251][e252]\n* silent for 12 days on 2026-11-02 09:00 [e268][e269][e270]\n\nFleet removal work on 2026-10-21 powered down nine bays [e154] and removed three bays unreachable during construction [e155]. Power was restored in B bays 2026-10-21 19:18 [e162] and nine bays regained power 2026-10-26 [e220]; six bays stayed on hold after power return [e221].\n\nHistory does not contain a dispatch decision or confirmation the poles are restored.",
+    "prompt_tokens": 6888,
+    "latency_s": 78.4,
+    "selected": [
+     "m39",
+     "m40",
+     "m41",
+     "m42"
+    ],
+    "reason": "Answer correctly cites start 2026-10-21 19:00 for P-33/34/35, 9-day silence on 2026-10-30 and 12-day silence on 2026-11-02, and correctly cites removal/power events e154/e155/e162/e220/e221 with no invented restoration. No hallucinated facts.",
+    "score": 2
    }
   }
- ]
+ ],
+ "summary": {
+  "memory_recall": {
+   "score": 9,
+   "max": 22,
+   "avg_prompt_tokens": 6565,
+   "avg_latency_s": 78.5
+  },
+  "memory": {
+   "score": 6,
+   "max": 22,
+   "avg_prompt_tokens": 1088,
+   "avg_latency_s": 45.8
+  },
+  "full_log": {
+   "score": 16,
+   "max": 22,
+   "avg_prompt_tokens": 10175,
+   "avg_latency_s": 52.2
+  },
+  "none": {
+   "score": 0,
+   "max": 22,
+   "avg_prompt_tokens": 114,
+   "avg_latency_s": 9.8
+  }
+ },
+ "spark_cost_usd": 0.9506
 }

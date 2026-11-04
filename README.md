@@ -8,7 +8,7 @@ We run a 39-pole smart-parking deployment in Korea. Every pole has cameras, a pl
 
 Forget Fleet is an always-on operations agent built on **Muse Glimmer 30B**, running locally on one DGX Spark. Every day it reads the fleet's events and decides what is worth carrying for weeks. When a failure keeps coming back, it tells you, and it cites the exact events behind every claim.
 
-**Demo video:** _VIDEO_URL_
+**Demo video:** https://youtu.be/iArsEvZs2w8 (1:48)
 
 ![viewer](docs/viewer.png)
 
@@ -25,7 +25,28 @@ The memory store is an append-only ledger. Memories are linked, resolved or supe
 
 ## Results (recorded live run)
 
-_RESULTS_
+**The always-on run (`runs/replay_v3.json`).** 302 events over 27 days. Muse Glimmer made every memory decision locally: 54 calls at about 11.6 tokens/s, about $0. Muse Spark was called 9 times for escalation and 8 times for verification, for about $0.20 in total.
+
+- **Memory:** Glimmer kept 110 memories (105 open, 3 resolved, 2 superseded). It linked 27 repeats to earlier memories instead of filing new notes, and it ignored all 27 daily routine digests. Seven device-health events it didn't cover were caught by the code safety net.
+- **Escalation (Oct 21):** five poles went quiet on the same evening. Muse Spark judged the three simultaneous 19:00 silences to be one shared cause rather than three independent faults, and told the operator to check archive ingest and that evening's power and removal work. The removal work was the cause: three bays had been taken out for construction.
+- **Alerts and two-key paging:** Glimmer raised 8 recurring-failure alerts, and every one passed the receipt check. Muse Spark verified 1 and held 7:
+  - **Paged (P-19):** three outages in 19 days (Oct 15, Oct 17, Nov 3) with a power/network suspicion. The verifier found every claim supported.
+  - **Held, 6 alerts (P-33, P-34, P-35):** Glimmer counted each "still not reporting" check as a new failure. The verifier saw one continuous outage, the bays that had been removed. Without the second key, three bays under construction would have paged a technician six times.
+  - **Held (P-23):** Glimmer correctly counted three reboots in 19 days (Oct 16, Oct 21, Nov 4) but blamed outdated plate logic. The verifier rejected the causal claim, so a human reviews it with the receipts attached.
+- **What this shows honestly:** a 30B local model is fast and private enough to watch a fleet all day, and it counts well, but it overreaches on causes and continuity. That is why the design pages a human only when two models agree.
+
+**Operator questions (`runs/eval_qa.json`).** 11 questions that need weeks of history, all answered by the same local Muse Glimmer. Muse Spark graded each answer 0-2 against the full raw log, without knowing which arm wrote it.
+
+| Arm (same model) | Score | Avg prompt tokens |
+|---|---|---|
+| Full raw log pasted into context | **16 / 22** | 10,175 |
+| Forget recall (pick from the memory index, then expand receipts) | 9 / 22 | 6,565 |
+| Forget memory, keyword retrieval | 6 / 22 | 1,088 |
+| No history | 0 / 22 | 114 |
+
+The honest read: four weeks of this fleet (302 events) still fits in Glimmer's context, and reading the whole log beats our memory recall. Glimmer's notes are too fragmented (110 memories for 302 events), and recall misses details. At this horizon, memory earns its place in the always-on loop: deciding, alerting and escalating every day without rereading everything. It should matter more over horizons where the log no longer fits, but we have not measured that yet. Better consolidation and recall are our next step.
+
+
 
 These come from one recorded run on our own data. They are not a benchmark. Model outputs vary between runs.
 
@@ -47,7 +68,8 @@ llama-server -m Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf --port 30111 -ngl 99 -c
 # 2. Replay four weeks through the always-on agent
 cp .env.example .env                  # optional: MODEL_API_KEY for the Muse Spark verifier
 python3 run_replay.py                 # -> runs/fleet_replay.json
-python3 eval_qa.py                    # operator questions: memory vs full log vs none
+python3 tools/verify_alerts.py        # second key: Muse Spark verifies every alert
+python3 eval_qa.py && python3 tools/eval_recall2.py   # operator questions: memory vs full log vs none
 
 # 3. Look at it
 python3 tools/build_viewer.py && python3 -m http.server 8000   # open http://localhost:8000/web/
@@ -58,7 +80,8 @@ python3 tools/build_viewer.py && python3 -m http.server 8000   # open http://loc
 - `fleetmem/agent.py`: the always-on agent: WRITE, alert from memory, receipt check, Muse Spark verify and escalation.
 - `fleetmem/fleet_ledger.py`: append-only fleet memory (remember, link, resolve, supersede).
 - `fleetmem/client.py`: one stdlib client for both local Muse Glimmer (llama.cpp, OpenAI-compatible) and the Meta Model API.
-- `run_replay.py`, `eval_qa.py`: four-week replay and the question evaluation.
+- `run_replay.py`, `eval_qa.py`, `tools/eval_recall2.py`, `tools/grade_eval.py`: four-week replay and the question evaluation.
+- `tools/verify_alerts.py`: the second key. Muse Spark verifies each alert against its receipt and cited memories (run as a separate pass, like an async queue).
 - `tools/extract_logbook.py`, `tools/build_stream.py`: how the anonymised event stream was built.
 - `web/index.html`: the fleet viewer used in the video.
 
