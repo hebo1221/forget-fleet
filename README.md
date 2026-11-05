@@ -8,7 +8,7 @@ We run a 39-pole smart-parking deployment in Korea. Every pole has cameras, a pl
 
 Forget Fleet is an always-on operations agent built on **Muse Glimmer 30B**, running locally on one DGX Spark. Every day it reads the fleet's events and decides what is worth carrying for weeks. When a failure keeps coming back, it tells you, and it cites the exact events behind every claim.
 
-**Demo video:** https://youtu.be/DiNXC4gc3dM (2:47)
+**Demo video:** https://youtu.be/rR8qvF_12bQ (2:47)
 
 ![viewer](docs/viewer.png)
 
